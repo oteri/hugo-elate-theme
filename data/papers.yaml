@@ -1,83 +1,919 @@
 enable: true
-title: "Publications"
-description: "Selected publications in computational biology, bioinformatics, and machine learning"
-footertext: 'View all publications on <a href="https://scholar.google.com/citations?hl=en&user=Ebgxuk4AAAAJ" target="_blank">Google Scholar</a>'
-
+title: Publications
+description: Selected publications in computational biology, bioinformatics, and machine
+  learning
+footertext: View all publications on <a href="https://scholar.google.com/citations?hl=en&user=Ebgxuk4AAAAJ"
+  target="_blank">Google Scholar</a>
 papers:
-  - title: "Nucleotide Transformer: building and evaluating robust foundation models for human genomics"
-    authors: 
-      - "Dalla-Torre H"
-      - "Gonzalez L"
-      - "Mendoza-Revilla J"
-      - "Lopez Carranza N"
-      - "Grzywaczewski AH"
-      - "Oteri F"
-      - "et al."
-    journal: "Nature Methods, 2024"
-    url: "https://doi.org/10.1038/s41592-024-02212-x"
-    thumbnail: "/images/papers/nucleotide-transformer.jpg"
-    abstract: "A foundation model for genomics, trained on large-scale human genomic data to enable various downstream applications in human genetics."
-    pdf: "https://www.nature.com/articles/s41592-024-02212-x.pdf"
-    code: "https://github.com/instadeepai/nucleotide-transformer"
-
-  - title: "iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis of protein families"
-    authors:
-      - "Oteri F"
-      - "Sarti E"
-      - "Nadalin F"
-      - "Carbone A"
-    journal: "Nucleic Acids Research, 2022"
-    url: "https://doi.org/10.1093/nar/gkac435"
-    thumbnail: "/images/papers/ibis2-analyzer.jpg"
-    abstract: "A web server for analyzing coevolution in protein families using phylogenetic information."
-    pdf: "https://academic.oup.com/nar/article-pdf/50/W1/W614/44484305/gkac435.pdf"
-
-  - title: "A global metagenomic map of urban microbiomes and antimicrobial resistance"
-    authors:
-      - "Danko D"
-      - "Bezdan D"
-      - "Afshin EE"
-      - "..."
-      - "Oteri F"
-      - "et al."
-    journal: "Cell, 2021"
-    url: "https://doi.org/10.1016/j.cell.2021.05.002"
-    thumbnail: "/images/papers/global-microbiome.jpg"
-    abstract: "A comprehensive analysis of urban microbiomes and antimicrobial resistance patterns across global cities."
-    pdf: "https://www.cell.com/cell/pdf/S0092-8674(21)00585-7.pdf"
-    data: "https://doi.org/10.6084/m9.figshare.13201817"
-
-  - title: "Large-scale identification of coevolution signals across homo-oligomeric protein interfaces by direct coupling analysis"
-    authors:
-      - "Uguzzoni G"
-      - "John Lovis S"
-      - "Oteri F"
-      - "Schug A"
-      - "Szurmant H"
-      - "Weigt M"
-    journal: "PNAS, 2017"
-    url: "https://doi.org/10.1073/pnas.1702664114"
-    thumbnail: ""
-    abstract: "A method for detecting coevolution signals in protein interfaces using direct coupling analysis."
-
-  - title: "BIS2Analyzer: a server for co-evolution analysis of conserved protein families"
-    authors:
-      - "Oteri F"
-      - "Nadalin F"
-      - "Champeimont R"
-      - "Carbone A"
-    journal: "Nucleic Acids Research, 2017"
-    url: "https://doi.org/10.1093/nar/gkx397"
-    thumbnail: ""
-    abstract: "A web server for analyzing coevolution in conserved protein families."
-
-  - title: "Multiscale simulations give insight into the hydrogen in and out pathways of [NiFe]-hydrogenases"
-    authors:
-      - "Oteri F"
-      - "Baaden M"
-      - "Lojou E"
-      - "Sacquin-Mora S"
-    journal: "The Journal of Physical Chemistry B, 2014"
-    url: "https://doi.org/10.1021/jp5082296"
-    thumbnail: ""
-    abstract: "A computational study of hydrogen pathways in hydrogenase enzymes using multiscale simulations."
+- title: 'Nucleotide Transformer: building and evaluating robust foundation models
+    for human genomics'
+  url: https://www.nature.com/articles/s41592-024-02523-z
+  authors:
+  - Hugo Dalla-Torre
+  - Liam Gonzalez
+  - Javier Mendoza-Revilla
+  - Nicolas Lopez Carranza
+  - Adam Henryk Grzywaczewski
+  - Francesco Oteri
+  - et al.
+  journal: /11/28, 2024
+  abstract: The prediction of molecular phenotypes from DNA sequences remains a longstanding
+    challenge in genomics, often driven by limited annotated data and the inability
+    to transfer learnings between tasks. Here, we present an extensive study of foundation
+    models pre-trained on DNA sequences, named Nucleotide Transformer, ranging from
+    50 million up to 2.5 billion parameters and integrating information from 3,202
+    human genomes and 850 genomes from diverse species. These transformer models yield
+    context-specific representations of nucleotide sequences, which allow for accurate
+    predictions even in low-data settings. We show that the developed models can be
+    fine-tuned at low cost to solve a variety of genomics applications. Despite no
+    supervision, the models learned to focus attention on key genomic elements and
+    can be used to improve the prioritization of genetic variants. The training and
+    application of …
+  thumbnail: /images/papers/nucleotide-transformer-building-and-evaluating-robust-foundation-models-for-human-genomics.jpg
+- title: 'The Nucleotide Transformer: Building and Evaluating Robust Foundation Models
+    for Human Genomics'
+  url: https://www.researchsquare.com/article/rs-2644486/latest
+  authors:
+  - Marie Lopez
+  - Hugo Dalla-Torre
+  - Liam Gonzalez
+  - Javier Mendoza-Revilla
+  - Nicolas Lopez Carranza
+  - Adam Grzywaczewski
+  - et al.
+  journal: /3/21, 2023
+  abstract: Closing the gap between measurable genetic information and observable
+    traits is a longstanding challenge in genomics. Yet, the prediction of molecular
+    phenotypes from DNA sequences alone remains limited and inaccurate, often driven
+    by the scarcity of annotated data and the inability to transfer learnings between
+    prediction tasks. Here, we present an extensive study of foundation models pre-trained
+    on DNA sequences, named the Nucleotide Transformer, integrating information from
+    3,202 diverse human genomes, as well as 850 genomes from a wide range of species,
+    including model and non-model organisms. These transformer models yield transferable,
+    context-specific representations of nucleotide sequences, which allow for accurate
+    molecular phenotype prediction even in low-data settings. We show that the sequence
+    representations alone match or outperform specialized methods on 12 of 18 prediction
+    tasks, and up to 15 after fine-tuning. Despite no supervision, the transformer
+    models learned to focus attention on key genomic elements, including those that
+    regulate gene expression, such as enhancers. Lastly, we demonstrate that utilizing
+    model representations can improve the prioritization of functional genetic variants.
+    The training and application of foundational models in genomics explored in this
+    study provide a widely applicable stepping stone to bridge the gap of accurate
+    molecular phenotype prediction from DNA sequence.
+  thumbnail: /images/papers/the-nucleotide-transformer-building-and-evaluating-robust-foundation-models-for-human-genomics.jpg
+- title: 'iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis
+    of protein families'
+  url: https://academic.oup.com/nar/article-abstract/50/W1/W412/6603660
+  authors:
+  - Francesco Oteri
+  - Edoardo Sarti
+  - Francesca Nadalin
+  - Alessandra Carbone
+  journal: /7/5, 2022
+  abstract: Residue coevolution within and between proteins is used as a marker of
+    physical interaction and/or residue functional cooperation. Pairs or groups of
+    coevolving residues are extracted from multiple sequence alignments based on a
+    variety of computational approaches. However, coevolution signals emerging in
+    subsets of sequences might be lost if the full alignment is considered. iBIS2Analyzer
+    is a web server dedicated to a phylogeny-driven coevolution analysis of protein
+    families with different evolutionary pressure. It is based on the iterative version,
+    iBIS2, of the coevolution analysis method BIS, Blocks in Sequences. iBIS2 is designed
+    to iteratively select and analyse subtrees in phylogenetic trees, possibly large
+    and comprising thousands of sequences. With iBIS2Analyzer, openly accessible at
+    http://ibis2analyzer.lcqb.upmc.fr/, the user visualizes, compares and inspects
+    clusters of coevolving residues by …
+  thumbnail: /images/papers/ibis2analyzer-a-web-server-for-a-phylogeny-driven-coevolution-analysis-of-protein-families.jpg
+- title: A large disordered region confers a wide spanning volume to vertebrate Suppressor
+    of Fused as shown in a trans-species solution study
+  url: https://www.sciencedirect.com/science/article/pii/S1047847722000235
+  authors:
+  - Staëlle Makamte
+  - Aurélien Thureau
+  - Amira Jabrani
+  - Annick Paquelin
+  - Anne Plessis
+  - Matthieu Sanial
+  - et al.
+  journal: /6/1, 2022
+  abstract: Hedgehog (Hh) pathway inhibition by the conserved protein Suppressor of
+    Fused (SuFu) is crucial to vertebrate development. By constrast, SuFu loss-of-function
+    mutant has little effect in drosophila.Previous publications showed that the crystal
+    structures of human and drosophila SuFu consist of two ordered domains that are
+    capable of breathing motions upon ligand binding. However, the crystal structure
+    of human SuFu does not give information about twenty N-terminal residues (IDR1)
+    and an eighty-residue-long region predicted as disordered (IDR2) in the C-terminus,
+    whose function is important for the pathway repression. These two intrinsically
+    disordered regions (IDRs) are species-dependent.To obtain information about the
+    IDR regions, we studied full-length SuFu’s structure in solution, both with circular
+    dichroism and small angle X-ray scattering, comparing drosophila, zebrafish and
+    human species, to better …
+  thumbnail: /images/papers/a-large-disordered-region-confers-a-wide-spanning-volume-to-vertebrate-suppressor-of-fused-as-shown-in-a-trans-species-solution-study.jpg
+- title: 'MyCLADE: a multi-source domain annotation server for sequence functional
+    exploration'
+  url: https://academic.oup.com/nar/article-abstract/49/W1/W452/6281475
+  authors:
+  - Riccardo Vicedomini
+  - Clémence Blachon
+  - Francesco Oteri
+  - Alessandra Carbone
+  journal: /7/2, 2021
+  abstract: The ever-increasing number of genomic and metagenomic sequences accumulating
+    in our databases requires accurate approaches to explore their content against
+    specific domain targets. MyCLADE is a user-friendly webserver designed for targeted
+    functional profiling of genomic and metagenomic sequences based on a database
+    of a few million probabilistic models of Pfam domains. It uses the MetaCLADE multi-source
+    domain annotation strategy, modelling domains based on multiple probabilistic
+    profiles. MyCLADE takes a list of protein sequences and possibly a target set
+    of domains/clans as input and, for each sequence, it provides a domain architecture
+    built from the targeted domains or from all Pfam domains. It is linked to the
+    Pfam and QuickGO databases in multiple ways for easy retrieval of domain and clan
+    information. E-value, bit-score, domain-dependent probability scores and logos
+    representing …
+  thumbnail: /images/papers/myclade-a-multi-source-domain-annotation-server-for-sequence-functional-exploration.jpg
+- title: A global metagenomic map of urban microbiomes and antimicrobial resistance
+  url: https://www.cell.com/cell/fulltext/S0092-8674(21)00585-7?fbclid=IwAR1XaE8f5aISjx4HaDGORL751fgjn7Sw-ZICFXxZFEX2rlx7D63_A003to8
+  authors:
+  - David Danko
+  - Daniela Bezdan
+  - Evan E Afshin
+  - Sofia Ahsanuddin
+  - Chandrima Bhattacharya
+  - Daniel J Butler
+  - et al.
+  journal: /6/24, 2021
+  abstract: We present a global atlas of 4,728 metagenomic samples from mass-transit
+    systems in 60 cities over 3 years, representing the first systematic, worldwide
+    catalog of the urban microbial ecosystem. This atlas provides an annotated, geospatial
+    profile of microbial strains, functional characteristics, antimicrobial resistance
+    (AMR) markers, and genetic elements, including 10,928 viruses, 1,302 bacteria,
+    2 archaea, and 838,532 CRISPR arrays not found in reference databases. We identified
+    4,246 known species of urban microorganisms and a consistent set of 31 species
+    found in 97% of samples that were distinct from human commensal organisms. Profiles
+    of AMR genes varied widely in type and density across cities. Cities showed distinct
+    microbial taxonomic signatures that were driven by climate and geographic differences.
+    These results constitute a high-resolution global metagenomic atlas that enables
+    discovery of …
+  thumbnail: /images/papers/a-global-metagenomic-map-of-urban-microbiomes-and-antimicrobial-resistance.jpg
+- title: Phylogenetic reconstruction based on synteny block and gene adjacencies
+  url: https://academic.oup.com/mbe/article-abstract/37/9/2747/5834724
+  authors:
+  - Guénola Drillon
+  - Raphaël Champeimont
+  - Francesco Oteri
+  - Gilles Fischer
+  - Alessandra Carbone
+  journal: /9, 2020
+  abstract: Gene order can be used as an informative character to reconstruct phylogenetic
+    relationships between species independently from the local information present
+    in gene/protein sequences. PhyChro is a reconstruction method based on chromosomal
+    rearrangements, applicable to a wide range of eukaryotic genomes with different
+    gene contents and levels of synteny conservation. For each synteny breakpoint
+    issued from pairwise genome comparisons, the algorithm defines two disjoint sets
+    of genomes, named partial splits, respectively, supporting the two block adjacencies
+    defining the breakpoint. Considering all partial splits issued from all pairwise
+    comparisons, a distance between two genomes is computed from the number of partial
+    splits separating them. Tree reconstruction is achieved through a bottom-up approach
+    by iteratively grouping sister genomes minimizing genome distances. PhyChro estimates …
+  thumbnail: /images/papers/phylogenetic-reconstruction-based-on-synteny-block-and-gene-adjacencies.jpg
+- title: 'COVTree: Coevolution in OVerlapped sequences by Tree analysis server'
+  url: https://academic.oup.com/nar/article-abstract/48/W1/W558/5831193
+  authors:
+  - Elin Teppa
+  - Diego J Zea
+  - Francesco Oteri
+  - Alessandra Carbone
+  journal: /7/2, 2020
+  abstract: Overlapping genes are commonplace in viruses and play an important role
+    in their function and evolution. For these genes, molecular coevolution may be
+    seen as a mechanism to decrease the evolutionary constraints of amino acid positions
+    in the overlapping regions and to tolerate or compensate unfavorable mutations.
+    Tracing these mutational sites, could help to gain insight on the direct or indirect
+    effect of the mutations in the corresponding overlapping proteins. In the past,
+    coevolution analysis has been used to identify residue pairs and coevolutionary
+    signatures within or between proteins that served as markers of physical interactions
+    and/or functional relationships. Coevolution in OVerlapped sequences by Tree analysis
+    (COVTree) is a web server providing the online analysis of coevolving amino-acid
+    pairs in overlapping genes, where residues might be located inside or outside
+    the overlapping region …
+  thumbnail: /images/papers/covtree-coevolution-in-overlapped-sequences-by-tree-analysis-server.jpg
+- title: 'BIS2Analyzer: a server for co-evolution analysis of conserved protein families'
+  url: https://academic.oup.com/nar/article-abstract/45/W1/W307/3787832
+  authors:
+  - Francesco Oteri
+  - Francesca Nadalin
+  - Raphaël Champeimont
+  - Alessandra Carbone
+  journal: /7/3, 2017
+  abstract: Along protein sequences, co-evolution analysis identifies residue pairs
+    demonstrating either a specific co-adaptation, where changes in one of the residues
+    are compensated by changes in the other during evolution or a less specific external
+    force that affects the evolutionary rates of both residues in a similar magnitude.
+    In both cases, independently of the underlying cause, co-evolutionary signatures
+    within or between proteins serve as markers of physical interactions and/or functional
+    relationships. Depending on the type of protein under study, the set of available
+    homologous sequences may greatly differ in size and amino acid variability. BIS2Analyzer,
+    openly accessible at http://www.lcqb.upmc.fr/BIS2Analyzer/, is a web server providing
+    the online analysis of co-evolving amino-acid pairs in protein alignments, especially
+    designed for vertebrate and viral protein families, which typically display a
+    small number …
+  thumbnail: /images/papers/bis2analyzer-a-server-for-co-evolution-analysis-of-conserved-protein-families.jpg
+- title: Residues of alpha helix H3 determine distinctive features of transforming
+    growth factor β3
+  url: https://pubs.acs.org/doi/abs/10.1021/acs.jpcb.7b01867
+  authors:
+  - Shahid M Nayeem
+  - Francesco Oteri
+  - Marc Baaden
+  - Shashank Deep
+  journal: /6/8, 2017
+  abstract: Transforming growth factors (TGF-βs) are proteins that regulate cell growth
+    by binding to their receptors. In contrast to transforming growth factor (TGF)
+    β1, TGF-β3 homodimer is believed to exist also in an open conformation, in which
+    both of its monomers are loosely packed against each other. At the origin of this
+    difference is the H3-helix. Its sequence and degree of structuration seem to govern
+    the outcome of TGF dimerization. We docked two monomers of TGF-β3 with intact
+    and altered H3 α-helix against each other using HADDOCK. TGF-β3 monomer with an
+    intact H3-helix exclusively forms closed conformations of homodimer, whereas the
+    open conformation may coexist with the closed one when a part of the H3 α-helix
+    is destabilized. We quantify the difference in its conformational preference for
+    the open versus the closed structure by calculating the binding energy between
+    monomers using the MMPBSA …
+  thumbnail: /images/papers/residues-of-alpha-helix-h3-determine-distinctive-features-of-transforming-growth-factor-β3.jpg
+- title: Large-scale identification of coevolution signals across homo-oligomeric
+    protein interfaces by direct coupling analysis
+  url: https://www.pnas.org/doi/abs/10.1073/pnas.1615068114
+  authors:
+  - Guido Uguzzoni
+  - Shalini John Lovis
+  - Francesco Oteri
+  - Alexander Schug
+  - Hendrik Szurmant
+  - Martin Weigt
+  journal: /3/28, 2017
+  abstract: Proteins have evolved to perform diverse cellular functions, from serving
+    as reaction catalysts to coordinating cellular propagation and development. Frequently,
+    proteins do not exert their full potential as monomers but rather undergo concerted
+    interactions as either homo-oligomers or with other proteins as hetero-oligomers.
+    The experimental study of such protein complexes and interactions has been arduous.
+    Theoretical structure prediction methods are an attractive alternative. Here,
+    we investigate homo-oligomeric interfaces by tracing residue coevolution via the
+    global statistical direct coupling analysis (DCA). DCA can accurately infer spatial
+    adjacencies between residues. These adjacencies can be included as constraints
+    in structure prediction techniques to predict high-resolution models. By taking
+    advantage of the ongoing exponential growth of sequence databases, we go significantly
+    beyond anecdotal …
+  thumbnail: /images/papers/large-scale-identification-of-coevolution-signals-across-homo-oligomeric-protein-interfaces-by-direct-coupling-analysis.jpg
+- title: 'Prediction of Protein and RNA Structures by Co-Evolution: Going Beyond Anecdotal
+    Cases towards Large-Scale'
+  url: https://www.cell.com/biophysj/fulltext/S0006-3495(16)31356-X
+  authors:
+  - Guido Uguzzoni
+  - Shalini John Lovis
+  - Francesco Oteri
+  - Hendrik Szurmant
+  - Weigt Martin
+  - Alexander Schug
+  journal: /2/3, 2017
+  abstract: Structural characterization of many important proteins and protein complexes-typically
+    preceding any detailed mechanistic exploration of their function-remains experimentally
+    challenging. Novel statistical tools such as Direct Coupling Analysis (DCA) take
+    advantage of the explosive growth of sequential databases and trace the co-evolution
+    of amino acids to predict secondary and tertiary contacts for proteins [1] and
+    RNAs [2]. These contacts can be exploited as spatial constraints in structure
+    prediction workflows leading to excellent quality predictions [1, 2, 3, 4]. We
+    demonstrate for two-component signal transduction systems (TCS), a ubiquitous
+    signal response system, how different sub-families of TCS can be identified based
+    on genomic data [unpublished data]. Going beyond anecdotal cases of a few protein
+    families, we have applied our methods to a systematic large-scale study of nearly
+    2000 PFAM protein …
+  thumbnail: /images/papers/prediction-of-protein-and-rna-structures-by-co-evolution-going-beyond-anecdotal-cases-towards-large-scale.jpg
+- title: Direct coevolutionary couplings reflect biophysical residue interactions
+    in proteins
+  url: https://pubs.aip.org/aip/jcp/article/145/17/174102/195270
+  authors:
+  - Alice Coucke
+  - Guido Uguzzoni
+  - Francesco Oteri
+  - Simona Cocco
+  - Remi Monasson
+  - Martin Weigt
+  journal: /11/7, 2016
+  abstract: Coevolution of residues in contact imposes strong statistical constraints
+    on the sequence variability between homologous proteins. Direct-Coupling Analysis
+    (DCA), a global statistical inference method, successfully models this variability
+    across homologous protein families to infer structural information about proteins.
+    For each residue pair, DCA infers 21× 21 matrices describing the coevolutionary
+    coupling for each pair of amino acids (or gaps). To achieve the residue-residue
+    contact prediction, these matrices are mapped onto simple scalar parameters; the
+    full information they contain gets lost. Here, we perform a detailed spectral
+    analysis of the coupling matrices resulting from 70 protein families, to show
+    that they contain quantitative information about the physico-chemical properties
+    of amino-acid interactions. Results for protein families are corroborated by the
+    analysis of synthetic data from lattice-protein models …
+  thumbnail: /images/papers/direct-coevolutionary-couplings-reflect-biophysical-residue-interactions-in-proteins.jpg
+- title: Molecular mechanism of statin-mediated LOX-1 inhibition
+  url: https://www.tandfonline.com/doi/abs/10.1080/15384101.2015.1026486
+  authors:
+  - Silvia Biocca
+  - Federico Iacovelli
+  - Sara Matarazzo
+  - Giulia Vindigni
+  - Francesco Oteri
+  - Alessandro Desideri
+  - et al.
+  journal: /5/19, 2015
+  abstract: Statins are largely used in clinics in the treatment of patients with
+    cardiovascular diseases for their effect on lowering circulating cholesterol.
+    Lectin-like oxidized low-density lipoprotein (LOX-1), the primary receptor for
+    ox-LDL, plays a central role in the pathogenesis of atherosclerosis and cardiovascular
+    disorders. We have recently shown that chronic exposure of cells to lovastatin
+    disrupts LOX-1 receptor cluster distribution in plasma membranes, leading to a
+    marked loss of LOX-1 function. Here we investigated the molecular mechanism of
+    statin-mediated LOX-1 inhibition and we demonstrate that all tested statins are
+    able to displace the binding of fluorescent ox-LDL to LOX-1 by a direct interaction
+    with LOX-1 receptors in a cell-based binding assay. Molecular docking simulations
+    confirm the interaction and indicate that statins completely fill the hydrophobic
+    tunnel that crosses the C-type lectin-like (CTLD …
+  thumbnail: /images/papers/molecular-mechanism-of-statin-mediated-lox-1-inhibition.jpg
+- title: Influence of the Single-Strand linker to stability of DNA nano-cages
+  url: https://repositorio.usp.br/item/002752751
+  authors:
+  - Federico Iacovelli
+  - Mattia Falconi
+  - Francesco Oteri
+  - Alessandro Desideri
+  - Cássio Alves
+  - Cristiano Luis Pinto de Oliveira
+  journal: ', 2015'
+  abstract: "ReP USP - Detalhe do registro: Influence of the Single-Strand linker\
+    \ to stability of DNA nano-cages \nHome About USP Schools USP Schools Escola de\
+    \ Artes, Ciências e Humanidades (EACH) \nEscola de Comunicações e Artes (ECA)\
+    \ Escola de Enfermagem (EE) Escola de Enfermagem \nde Ribeirão Preto (EERP) Escola\
+    \ de Educação Física e Esporte (EEFE) Escola de Educação \nFísica e Esporte de\
+    \ Ribeirão Preto (EEFERP) Escola de Engenharia de Lorena (EEL) Escola \nde Engenharia\
+    \ de São Carlos (EESC) Escola Politécnica (EP) Escola Superior de Agricultura\
+    \ \nLuiz de Queiroz (ESALQ) Faculdade de Arquitetura e Urbanismo (FAU) Faculdade\
+    \ de \nCiências Farmacêuticas (FCF) Faculdade de Ciências Farmacêuticas de Ribeirão\
+    \ Preto \n(FCFRP) Faculdade de Direito (FD) Faculdade de Direito de Ribeirão Preto\
+    \ (FDRP) Faculdade \nde Economia, Administração, Contabilidade e Atuária (FEA)\
+    \ Faculdade de Economia, …"
+  thumbnail: /images/papers/influence-of-the-single-strand-linker-to-stability-of-dna-nano-cages.jpg
+- title: Multiscale Simulations Give Insight into the Hydrogen In and Out Pathways
+    of [NiFe]-Hydrogenases from Aquifex aeolicus and Desulfovibrio fructosovorans
+  url: https://pubs.acs.org/doi/abs/10.1021/jp5089965
+  authors:
+  - Francesco Oteri
+  - Marc Baaden
+  - Elisabeth Lojou
+  - Sophie Sacquin-Mora
+  journal: /12/4, 2014
+  abstract: '[NiFe]-hydrogenases catalyze the cleavage of molecular hydrogen into
+    protons and electrons and represent promising tools for H2-based technologies
+    such as biofuel cells. However, many aspects of these enzymes remain to be understood,
+    in particular how the catalytic center can be protected from irreversible inactivation
+    by O2. In this work, we combined homology modeling, all-atom molecular dynamics,
+    and coarse-grain Brownian dynamics simulations to investigate and compare the
+    dynamic and mechanical properties of two [NiFe]-hydrogenases: the soluble O2-sensitive
+    enzyme from Desulfovibrio fructosovorans, and the O2-tolerant membrane-bound hydrogenase
+    from Aquifex aeolicus. We investigated the diffusion pathways of H2 from the enzyme
+    surface to the central [NiFe] active site, and the possible proton pathways that
+    are used to evacuate hydrogen after the oxidation reaction. Our results highlight …'
+  thumbnail: /images/papers/multiscale-simulations-give-insight-into-the-hydrogen-in-and-out-pathways-of-nife-hydrogenases-from-aquifex-aeolicus-and-desulfovibrio-fructosovorans.jpg
+- title: Influence of the single‐strand linker composition on the structural/dynamical
+    properties of a truncated octahedral DNA nano‐cage family
+  url: https://onlinelibrary.wiley.com/doi/abs/10.1002/bip.22475
+  authors:
+  - Federico Iacovelli
+  - Cassio Alves
+  - Mattia Falconi
+  - Francesco Oteri
+  - Cristiano LP de Oliveira
+  - Alessandro Desideri
+  journal: /10, 2014
+  abstract: 'The structural/dynamical properties of three truncated octahedral DNA
+    nano‐cages composed by identical double helices but single strand linkers with
+    different composition, namely 7 thymidines, 7 adenines, and 7 alternated thymidines
+    and adenines, have been investigated through classical molecular dynamics simulations.
+    Trajectories have been analyzed to investigate the role of the linkers in defining
+    nano‐cages stability and flexibility, including possible influence on the internal
+    cages motions. The data indicate that the cages behavior is almost identical and
+    that the structural/dynamical parameters measured along the trajectories are not
+    particularly affected by the presence of different bases. These results demonstrate
+    that the constraints imposed by the nano‐structure geometry are the main factor
+    in modulating these properties. © 2014 Wiley Periodicals, Inc. Biopolymers 101:
+    992–999, 2014.'
+  thumbnail: /images/papers/influence-of-the-singlestrand-linker-composition-on-the-structuraldynamical-properties-of-a-truncated-octahedral-dna-nanocage-family.jpg
+- title: High warfarin sensitivity in carriers of CYP2C9* 35 is determined by the
+    impaired interaction with P450 oxidoreductase
+  url: https://www.nature.com/articles/tpj201341
+  authors:
+  - MY Lee
+  - P Borgiani
+  - I Johansson
+  - F Oteri
+  - S Mkrtchian
+  - M Falconi
+  - et al.
+  journal: /8, 2014
+  abstract: Cytochrome P450 2C9 (CYP2C9) metabolizes many clinically important drugs
+    including warfarin and diclofenac. We have recently reported a new allelic variant,
+    CYP2C9* 35, found in a warfarin hypersensitive patient with Arg125Leu and Arg144Cys
+    mutations. Here, we have investigated the molecular basis for the functional consequences
+    of these polymorphic changes. CYP2C9. 1 and CYP2C9-Arg144Cys expressed in human
+    embryonic kidney 293 cells effectively metabolized both S-warfarin and diclofenac
+    in NADPH-dependent reactions, whereas CYP2C9-Arg125Leu or CYP2C9. 35 were catalytically
+    silent. However, when NADPH was replaced by a direct electron donor to CYPs, cumene
+    hydroperoxide, hereby bypassing the CYP oxidoreductase (POR), all variant enzymes
+    were active, indicating unproductive interactions between CYP2C9. 35 and POR.
+    In silico analysis revealed a decrease of the …
+  thumbnail: /images/papers/high-warfarin-sensitivity-in-carriers-of-cyp2c9-35-is-determined-by-the-impaired-interaction-with-p450-oxidoreductase.jpg
+- title: The weak, fluctuating, dipole moment of membrane-bound hydrogenase from Aquifex
+    aeolicus accounts for its adaptability to charged electrodes
+  url: https://pubs.rsc.org/en/content/articlehtml/2014/cp/c4cp00510d
+  authors:
+  - Francesco Oteri
+  - Alexandre Ciaccafava
+  - Anne De Poulpiquet
+  - Marc Baaden
+  - Elisabeth Lojou
+  - Sophie Sacquin-Mora
+  journal: ', 2014'
+  abstract: '[NiFe] hydrogenases from Aquifex aeolicus (AaHase) and Desulfovibrio
+    fructosovorans (DfHase) have been mainly studied to characterize physiological
+    electron transfer processes, or to develop biotechnological devices such as biofuel
+    cells. In this context, it remains difficult to control the orientation of AaHases
+    on electrodes to achieve a fast interfacial electron transfer. Here, we study
+    the electrostatic properties of these two proteins based on microsecond-long molecular
+    dynamics simulations that we compare to voltammetry experiments. Our calculations
+    show weak values and large fluctuations of the dipole direction in AaHase compared
+    to DfHase, enabling the AaHase to absorb on both negatively and positively charged
+    electrodes, with an orientation distribution that induces a spread in electron
+    transfer rates. Moreover, we discuss the role of the transmembrane helix of AaHase
+    and show that it does not …'
+  thumbnail: /images/papers/the-weak-fluctuating-dipole-moment-of-membrane-bound-hydrogenase-from-aquifex-aeolicus-accounts-for-its-adaptability-to-charged-electrodes.jpg
+- title: Simulative and experimental investigation on the cleavage site that generates
+    the soluble human LOX-1
+  url: https://www.sciencedirect.com/science/article/pii/S0003986113003032
+  authors:
+  - Silvia Biocca
+  - Tania Arcangeli
+  - Elisa Tagliaferri
+  - Barbara Testa
+  - Giulia Vindigni
+  - Francesco Oteri
+  - et al.
+  journal: /12/1, 2013
+  abstract: Lectin-like oxidized low-density lipoprotein receptor-1 (LOX-1) is a scavenger
+    receptor that mediates the recognition, the binding and internalization of ox-LDL.
+    A truncated soluble form of LOX-1 (sLOX-1) has been identified that, at elevated
+    levels, has been associated to acute coronary syndrome. Human sLOX-1 is the extracellular
+    part of membrane LOX-1 which is cleaved in the NECK domain with a mechanism that
+    has not yet been identified. Purification of human sLOX-1 has been carried out
+    to experimentally identify the cleavage site region within the NECK domain. Molecular
+    modelling and classical molecular dynamics simulation techniques have been used
+    to characterize the structural and dynamical properties of the LOX-1 NECK domain
+    in the presence and absence of the CTLD recognition region, taking into account
+    the obtained proteolysis results. The simulative data indicate that the NECK domain
+    is …
+  thumbnail: /images/papers/simulative-and-experimental-investigation-on-the-cleavage-site-that-generates-the-soluble-human-lox-1.jpg
+- title: Molecular Modeling of Hydrogenase Enzymes for Biofuel Cell Design
+  url: https://www.cell.com/biophysj/fulltext/S0006-3495(12)03110-4
+  authors:
+  - Francesco Oteri
+  - Anne De Poulpiquet
+  - Alexandre Ciaccafava
+  - Elisabeth Loujou
+  - Marc Baaden
+  journal: /1/29, 2013
+  abstract: Within the BioPac project, we aim to understand the molecular details
+    of hydrogenase function in order to design and improve next generation biofuel
+    cells. Hydrogenases are key enzymes for the enzymatic conversion of molecular
+    hydrogen into protons and electrons, representing a promising replacement of chemical
+    catalysts in fuel cell devices.To obtain a working biofuel cell, we have been
+    studying the Aquifex Aeolicus (Aa) hydrogenase enzyme because of its resistance
+    to oxygen and carbon monoxyde. Moreover, the presence of a putative transmembrane
+    helix and protein-DDM interaction represent two challenging features to efficiently
+    immobilize the protein on the electrode surface.
+  thumbnail: /images/papers/molecular-modeling-of-hydrogenase-enzymes-for-biofuel-cell-design.jpg
+- title: Modeling and simulation of DNA nanocages-saxs and MD
+  url: https://repositorio.usp.br/item/002470914
+  authors:
+  - Cassio Alves
+  - Federico Iacovelli
+  - Francesco Oteri
+  - Mattia Falconi
+  - Alessandro Desideri
+  - Jan Skov Pedersen
+  - et al.
+  journal: ', 2013'
+  abstract: "ReP USP - Detalhe do registro: Modeling and simulation of DNA nanocages\
+    \ - saxs and MD \nHome About USP Schools USP Schools Escola de Artes, Ciências\
+    \ e Humanidades (EACH) \nEscola de Comunicações e Artes (ECA) Escola de Enfermagem\
+    \ (EE) Escola de Enfermagem \nde Ribeirão Preto (EERP) Escola de Educação Física\
+    \ e Esporte (EEFE) Escola de Educação \nFísica e Esporte de Ribeirão Preto (EEFERP)\
+    \ Escola de Engenharia de Lorena (EEL) Escola \nde Engenharia de São Carlos (EESC)\
+    \ Escola Politécnica (EP) Escola Superior de Agricultura \nLuiz de Queiroz (ESALQ)\
+    \ Faculdade de Arquitetura e Urbanismo (FAU) Faculdade de \nCiências Farmacêuticas\
+    \ (FCF) Faculdade de Ciências Farmacêuticas de Ribeirão Preto \n(FCFRP) Faculdade\
+    \ de Direito (FD) Faculdade de Direito de Ribeirão Preto (FDRP) Faculdade \nde\
+    \ Economia, Administração, Contabilidade e Atuária (FEA) Faculdade de Economia,\
+    \ …"
+  thumbnail: /images/papers/modeling-and-simulation-of-dna-nanocages-saxs-and-md.jpg
+- title: Mapping multiple potential ATP binding sites on the matrix side of the bovine
+    ADP/ATP carrier by the combined use of MD simulation and docking
+  url: https://link.springer.com/article/10.1007/s00894-011-1255-5
+  authors:
+  - Daniele Di Marino
+  - Francesco Oteri
+  - Blasco Morozzo della Rocca
+  - Ilda D’Annessa
+  - Mattia Falconi
+  journal: /6, 2012
+  abstract: The mitochondrial adenosine diphosphate/adenosine triphosphate (ADP/ATP)
+    carrier—AAC—was crystallized in complex with its specific inhibitor carboxyatractyloside
+    (CATR). The protein consists of a six-transmembrane helix bundle that defines
+    the nucleotide translocation pathway, which is closed towards the matrix side
+    due to sharp kinks in the odd-numbered helices. In this paper, we describe the
+    interaction between the matrix side of the AAC transporter and the ATP4− molecule
+    using carrier structures obtained through classical molecular dynamics simulation
+    (MD) and a protein–ligand docking procedure. Fifteen structures were extracted
+    from a previously published MD trajectory through clustering analysis, and 50
+    docking runs were carried out for each carrier conformation, for a total of 750
+    runs (“MD docking”). The results were compared to those from 750 docking runs
+    performed on the X-ray …
+  thumbnail: /images/papers/mapping-multiple-potential-atp-binding-sites-on-the-matrix-side-of-the-bovine-adpatp-carrier-by-the-combined-use-of-md-simulation-and-docking.jpg
+- title: Simulative analysis of a truncated octahedral DNA nanocage family indicates
+    the single-stranded thymidine linkers as the major player for the conformational
+    variability
+  url: https://pubs.acs.org/doi/abs/10.1021/jp203999x
+  authors:
+  - Francesco Oteri
+  - Mattia Falconi
+  - Giovanni Chillemi
+  - Felicie F Andersen
+  - Cristiano LP Oliveira
+  - Jan S Pedersen
+  - et al.
+  journal: /9/1, 2011
+  abstract: Three nanocages composed of 12 DNA double helices, linked by single strand
+    thymidine linkers made by 3, 5, and 7 nucleotides, have been characterized through
+    classical molecular dynamics simulation to evaluate in silico the specific structural
+    and conformational features generated by the use of a thymidine bridge of different
+    length. The three simulated nanocages are stable, and their dynamics is characterized
+    by a slight rotational motion of the double helices, induced by the conformational
+    variations of the thymidine linkers. Despite this rotation the helices maintain
+    a B-DNA structure as indicated by the values of their geometrical parameters.
+    The thymidine strands are the elements having the largest displacement from the
+    initial 3D model and give a significant contribution to the organization of the
+    scaffold geometry throughout definite arrangements of base stacking and hydrogen
+    bonds between the bases …
+  thumbnail: /images/papers/simulative-analysis-of-a-truncated-octahedral-dna-nanocage-family-indicates-the-single-stranded-thymidine-linkers-as-the-major-player-for-the-conformational-variability.jpg
+- title: Effect of the charge distribution along the “ferritin-like” pores of the
+    proteins from the Dps family on the iron incorporation process
+  url: https://link.springer.com/article/10.1007/s00775-011-0784-9
+  authors:
+  - Pierpaolo Ceci
+  - Gisa Di Cecca
+  - Mattia Falconi
+  - Francesco Oteri
+  - Carlotta Zamparelli
+  - Emilia Chiancone
+  journal: /8, 2011
+  abstract: DNA-binding proteins from starved cells (Dps) differ in the number and
+    position of charged residues along the “ferritin-like” pores that are used by
+    iron to reach the ferroxidase center and the protein cavity. These differences
+    are shown to affect significantly the electrostatic potential at the pores, which
+    determines the extent of cooperativity in the iron uptake kinetics and thereby
+    the mass distribution of the ferric hydroxide micelles inside the protein cavity.
+    These conclusions are of biotechnological value in the preparation of protein-enclosed
+    nanomaterials and are expected to apply also to ferritins. They were reached after
+    characterization of the Dps from Listeria innocua, Helicobacter pylori, Thermosynechococcus
+    elongatus, Escherichia coli, and Mycobacterium smegmatis. The characterization
+    comprised the calculation of the electrostatic potential at the pores, determination
+    of the iron uptake kinetics in the …
+  thumbnail: /images/papers/effect-of-the-charge-distribution-along-the-ferritin-like-pores-of-the-proteins-from-the-dps-family-on-the-iron-incorporation-process.jpg
+- title: Characterization of a novel CYP2C9 gene mutation and structural bioinformatic
+    protein analysis in a warfarin hypersensitive patient
+  url: https://journals.lww.com/jpharmacogenetics/FullText/2011/06000/Characterization_of_a_novel_CYP2C9_gene_mutation.5.aspx
+  authors:
+  - Cinzia Ciccacci
+  - Mattia Falconi
+  - Nicoletta Paolillo
+  - Francesco Oteri
+  - Vittorio Forte
+  - Giuseppe Novelli
+  - et al.
+  journal: /6/1, 2011
+  abstract: Warfarin (coumadin) is a worldwide-prescribed anticoagulant, largely used
+    for the long-term treatment and for the prevention of thromboembolic events. However,
+    it needs a constant clinical follow-up due to its narrow therapeutic range and
+    due to the greater interindividual variability in the drug dose required to achieve
+    the therapeutic effect. The correct dosing is necessary to avoid bleeding or risk
+    of thrombotic events in case of an excessive or a too low dose, respectively.
+    The interindividual variability in the warfarin requirement is a multifactorial
+    character and both environmental and genetic factors influence the dose necessary
+    for the therapeutic effect. Many pharmacogenetic studies have shown that polymorphic
+    alleles within CYP2C9 and VKORC1 genes are related to warfarin dose requirement
+    [1–3] as well as a new recently identified common variation (rs2108622) in the
+    CYP4F2 gene [4, 5].
+  thumbnail: /images/papers/characterization-of-a-novel-cyp2c9-gene-mutation-and-structural-bioinformatic-protein-analysis-in-a-warfarin-hypersensitive-patient.jpg
+- title: 'Structural-dynamical investigation of the ZnuA histidine-rich loop: involvement
+    in zinc management and transport'
+  url: https://link.springer.com/article/10.1007/s10822-010-9409-6
+  authors:
+  - Mattia Falconi
+  - Francesco Oteri
+  - Francesco Di Palma
+  - Saurabh Pandey
+  - Andrea Battistoni
+  - Alessandro Desideri
+  journal: /2, 2011
+  abstract: Comparative homology modelling techniques have been used to model the
+    protein ZnuA from Salmonella enterica serovar Typhimurium using the 3D structure
+    of the homologous protein from Escherichia coli. These two-domain proteins bind
+    one Zn2+ atom, with high affinity, in the inter-domain cleft and possess a histidine-rich
+    loop in the N-terminal domain. Alternative structures of the ZnuA histidine-rich
+    loop, never resolved by the X-ray diffraction method, have been modelled. A model
+    of the apo form, one with the histidine-rich loop deleted and two alternative
+    structures with a second zinc ion bound to the histidine-rich loop, have been
+    generated. In all the modelled proteins, investigated through molecular dynamics
+    simulation, the histidine-rich loop is highly mobile and its fluctuations are
+    correlated to the ligand stability observed in the zinc sites. Based on the plasticity
+    of the histidine-rich loop and its …
+  thumbnail: /images/papers/structural-dynamical-investigation-of-the-znua-histidine-rich-loop-involvement-in-zinc-management-and-transport.jpg
+- title: Conjugated eicosapentaenoic acid (cEPA) inhibits L. donovani topoisomerase
+    I and has an antiproliferative activity against L. donovani promastigotes
+  url: https://www.researchgate.net/profile/Ilda-Dannessa/publication/257143174_Conjugated_Eicosapentanoic_Acid_cEPA_inhibits_L_donovani_Topoisomerase_I_and_has_an_antiproliferative_activity_against_L_donovani_promastigotes/links/5e218f8c458515ba208e57a2/Conjugated-Eicosapentanoic-Acid-cEPA-inhibits-L-donovani-Topoisomerase-I-and-has-an-antiproliferative-activity-against-L-donovani-promastigotes.pdf
+  authors:
+  - O Vassallo
+  - S Castelli
+  - A Biswas
+  - S Sengupta
+  - PK Das
+  - I D’Annessa
+  - et al.
+  journal: ', 2011'
+  abstract: Conjugated eicosapentaenoic acid inhibits the relaxation activity of purified
+    L. donovani topoisomerase I, with an efficiency higher than that displayed by
+    the corresponding human enzyme. Docking of the acid compound over the 3D structure
+    of the enzyme shows that the complex is stabilized by a large network of interaction
+    between the compound and many residues located in proximity of the active site,
+    including the catalytic tyrosine 222, providing an explanation for its efficient
+    inhibitory effect. The acid has also a strong antiprotozoal activity against L.
+    donovani promastigotes (EC50= 75 µM) whilst it has no effect against murine macrophages
+    (IC50 2 mM). Taken together the results indicate that L. donovani topoisomerase
+    I can be considered an interesting molecular target and that conjugated eicosapentaenoic
+    acid can be taken in consideration as a possible lead compound against leishmaniasis.
+  thumbnail: /images/papers/conjugated-eicosapentaenoic-acid-cepa-inhibits-l-donovani-topoisomerase-i-and-has-an-antiproliferative-activity-against-l-donovani-promastigotes.jpg
+- title: ADP/ATP mitochondrial carrier MD simulations to shed light on the structural–dynamical
+    events that, after an additional mutation, restore the function in a pathological
+    single …
+  url: https://www.sciencedirect.com/science/article/pii/S1047847710002297
+  authors:
+  - Daniele Di Marino
+  - Francesco Oteri
+  - Blasco Morozzo Della Rocca
+  - Giovanni Chillemi
+  - Mattia Falconi
+  journal: /12/1, 2010
+  abstract: Molecular dynamics simulations of the wild type bovine ADP/ATP mitochondrial
+    carrier, and of the single Ala113Pro and double Ala113Pro/Val180Met mutants, embedded
+    in a lipid bilayer, have been carried out for 30ns to shed light on the structural–dynamical
+    changes induced by the Val180Met mutation restoring the carrier function in the
+    Ala113Pro pathologic mutant. Principal component analysis indicates that, for
+    the three systems, the protein dynamics is mainly characterized by the motion
+    of the matrix loops and of the odd-numbered helices having a conserved proline
+    in their central region. Analysis of the motions shows a different behaviour of
+    single pathological mutant with respect of the other two systems. The single mutation
+    induces a regularization and rigidity of the H3 helix, lost upon the introduction
+    of the second mutation. This is directly correlated to the salt bridge distribution
+    involving residues Arg79 …
+  thumbnail: /images/papers/adpatp-mitochondrial-carrier-md-simulations-to-shed-light-on-the-structuraldynamical-events-that-after-an-additional-mutation-restore-the-function-in-a-pathological-single.jpg
+- title: ADP/ATP mitochondrial carrier MD simulations to shed light on the
+  url: https://scholar.google.com/scholar?cluster=3819772127307103697&hl=en&oi=scholarr
+  authors:
+  - Daniele Di Marino
+  - Francesco Oteri
+  - Blasco Morozzo della Rocca
+  - Giovanni Chillemi
+  - Mattia Falconi
+  journal: /8/9, 2010
+  abstract: 26 Molecular dynamics simulations of the wild type bovine ADP/ATP mitochondrial
+    carrier, and of the single 27 Ala113Pro and double Ala113Pro/Val180Met mutants,
+    embedded in a lipid bilayer, have been carried out 28 for 30 ns to shed light
+    on the structural–dynamical changes induced by the Val180Met mutation restor-29
+    ing the carrier function in the Ala113Pro pathologic mutant. Principal component
+    analysis indicates that, 30 for the three systems, the protein dynamics is mainly
+    characterized by the motion of the matrix loops and 31 of the odd-numbered helices
+    having a conserved proline in their central region. Analysis of the motions 32
+    shows a different behaviour of single pathological mutant with respect of the
+    other two systems. The sin-33 gle mutation induces a regularization and rigidity
+    of the H3 helix, lost upon the introduction of the sec-34 ond mutation. This is
+    directly correlated to the salt bridge …
+  thumbnail: /images/papers/adpatp-mitochondrial-carrier-md-simulations-to-shed-light-on-the.jpg
+- title: 'Structure of nanoscale truncated octahedral DNA cages: variation of single-stranded
+    linker regions and influence on assembly yields'
+  url: https://pubs.acs.org/doi/abs/10.1021/nn901510v
+  authors:
+  - Cristiano Luis Pinto Oliveira
+  - Sissel Juul
+  - Hanne Lærke Jørgensen
+  - Bjarne Knudsen
+  - David Tordrup
+  - Francesco Oteri
+  - et al.
+  journal: /3/23, 2010
+  abstract: The assembly, structure, and stability of DNA nanocages with the shape
+    of truncated octahedra have been studied. The cages are composed of 12 double-stranded
+    B-DNA helices interrupted by single-stranded linkers of thymidines of varying
+    length that constitute the truncated corners of the structure. The structures
+    assemble with a high efficiency in a one-step procedure, compared to previously
+    published structures of similar complexity. The structures of the cages were determined
+    by small-angle X-ray scattering. With increasing linker length, there is a systematic
+    increase of the cage size and decrease of the twist angle of the double helices
+    with respect to the symmetry planes of the cage structure. In the present study,
+    we demonstrate the length of the single-stranded linker regions, which impose
+    a certain degree of flexibility to the structure, to be the important determinant
+    for efficient assembly. The linker length …
+  thumbnail: /images/papers/structure-of-nanoscale-truncated-octahedral-dna-cages-variation-of-single-stranded-linker-regions-and-influence-on-assembly-yields.jpg
+- title: 'Nano-scale DNA Cages: Structural and Functional Properties of the Single-Stranded
+    Linker Regions'
+  url: https://pure.au.dk/portal/en/publications/nano-scale-dna-cages-structural-and-functional-properties-of-the-
+  authors:
+  - Félicie Faucon Andersen
+  - Sissel Juul Jensen
+  - Cristiano Luis Pinto De Oliveira
+  - Hanne Lærke Jørgensen
+  - Bjarne Knudsen
+  - David Paul Tordrup
+  - et al.
+  journal: ', 2010'
+  abstract: "Nano-scale DNA Cages: Structural and Functional Properties of the Single-Stranded\
+    \ Linker \nRegions - Aarhus University Skip to main navigation Skip to search\
+    \ Skip to main content \nAarhus University Home Aarhus University Logo Help &\
+    \ FAQ English Dansk Home Profiles \nResearch units Projects Research output Prizes\
+    \ Activities Courses Press/Media Search by \nexpertise, name or affiliation Nano-scale\
+    \ DNA Cages: Structural and Functional Properties of \nthe Single-Stranded Linker\
+    \ Regions Félicie Faucon Andersen, Sissel Juul Jensen, Cristiano \nLuis Pinto\
+    \ De Oliveira, Hanne Lærke Jørgensen, Bjarne Knudsen, David Paul Tordrup, \nFrancesco\
+    \ Oteri, Jørn Erland Koch, Mattia Falconi, Alessandro Desideri, Jan Skov Pedersen,\
+    \ \nBirgitta R. Knudsen Research output: Contribution to conference › Poster ›\
+    \ Research Overview \nOriginal language English Publication date 2010 Publication\
+    \ status Published - 2010 Event …"
+  thumbnail: /images/papers/nano-scale-dna-cages-structural-and-functional-properties-of-the-single-stranded-linker-regions.jpg
+- title: Deciphering the structural properties that confer stability to a DNA nanocage
+  url: https://pubs.acs.org/doi/abs/10.1021/nn900468y
+  authors:
+  - Mattia Falconi
+  - Francesco Oteri
+  - Giovanni Chillemi
+  - Felicie F Andersen
+  - David Tordrup
+  - Cristiano LP Oliveira
+  - et al.
+  journal: /7/28, 2009
+  abstract: A DNA nanocage has been recently characterized by small-angle X-ray scattering
+    (SAXS) and cryo-transmission electron microscopy as a DNA octahedron having a
+    central cavity larger than the apertures in the surrounding DNA lattice. Starting
+    from the SAXS data, a DNA nanocage has been modeled and simulated by classical
+    molecular dynamics to evaluate in silico its structural properties and stability.
+    Global properties, principal component analysis, and DNA geometrical parameters,
+    calculated along the entire trajectory, indicate that the cage is stable and that
+    the B-DNA conformation, also if slightly distorted, is maintained for all the
+    simulation time. Starting from the initial model, the nanocage scaffold undergoes
+    a contraction of the thymidine strands, connecting the DNA double helices, suggesting
+    that the length of the thymidine strands is a crucial aspect in the modulation
+    of the nanocage stability. A …
+  thumbnail: /images/papers/deciphering-the-structural-properties-that-confer-stability-to-a-dna-nanocage.jpg
+- title: Conjugated eicosapentaenoic acid inhibits human topoisomerase IB with a mechanism
+    different from camptothecin
+  url: https://www.sciencedirect.com/science/article/pii/S0003986109001337
+  authors:
+  - Silvia Castelli
+  - Alessia Campagna
+  - Oscar Vassallo
+  - Cinzia Tesauro
+  - Paola Fiorani
+  - Pietro Tagliatesta
+  - et al.
+  journal: /6/15, 2009
+  abstract: Conjugated eicosapentaenoic acid (cEPA) has been found to have antitumor
+    effects which has been ascribed to their ability to inhibit DNA topoisomerases
+    and DNA polymerases. We here show that cEPA inhibits the catalytic activity of
+    human topoisomerase I, but unlike camptothecin it does not stabilize the cleavable
+    complex, indicating a different mechanism of action. cEPA inhibits topoisomerase
+    by impeding the catalytic cleavage of the DNA substrate as demonstrated using
+    specific oligonucleotide substrates, and prevents the stabilization of the cleavable
+    complex by camptothecin. Preincubation of the inhibitor with the enzyme is required
+    to obtain complete inhibition. Molecular docking simulations indicate that the
+    preferred cEPA binding site is proximal to the active site with the carboxylic
+    group strongly interacting with the positively charged K443 and K587. Taken together
+    the results indicate that cEPA inhibitor …
+  thumbnail: /images/papers/conjugated-eicosapentaenoic-acid-inhibits-human-topoisomerase-ib-with-a-mechanism-different-from-camptothecin.jpg
+- title: Assembly and Analysis of Three-dimensional DNA nanostructures
+  url: https://pure.au.dk/portal/en/publications/assembly-and-analysis-of-three-dimensional-dna-nanostructures
+  authors:
+  - Sissel Juul Jensen
+  - Esben Eickhardt
+  - Christine Juul Fælled Nielsen
+  - David Paul Tordrup
+  - Cristiano Luis Pinto De Oliveira
+  - Francesco Oteri
+  - et al.
+  journal: ', 2009'
+  abstract: "Assembly and Analysis of Three-dimensional DNA nanostructures - Aarhus\
+    \ University Skip to \nmain navigation Skip to search Skip to main content Aarhus\
+    \ University Home Aarhus \nUniversity Logo Help & FAQ English Dansk Home Profiles\
+    \ Research units Projects Research \noutput Prizes Activities Courses Press/Media\
+    \ Search by expertise, name or affiliation Assembly \nand Analysis of Three-dimensional\
+    \ DNA nanostructures Sissel Juul Jensen, Esben Eickhardt, \nChristine Juul Fælled\
+    \ Nielsen, David Paul Tordrup, Cristiano Luis Pinto De Oliveira, Francesco \n\
+    Oteri, Mattia Falconi, Giovanni Chillemi, Alessandro Desideri, Jan Skov Pedersen,\
+    \ Birgitta R. \nKnudsen, Félicie Faucon Andersen Research output: Contribution\
+    \ to conference › Conference \nabstract for conference › Research Overview Original\
+    \ language English Publication date \n2009 Publication status Published - 2009\
+    \ Event Nanotech Europe 2009 - Berlin, Germany …"
+  thumbnail: /images/papers/assembly-and-analysis-of-three-dimensional-dna-nanostructures.jpg
+- title: MD simulations of papillomavirus DNA-E2 protein complexes hints at a protein
+    structural code for DNA deformation
+  url: https://www.cell.com/AJHG/fulltext/S0006-3495(08)70181-4
+  authors:
+  - M Falconi
+  - F Oteri
+  - T Eliseo
+  - DO Cicero
+  - A Desideri
+  journal: /8/1, 2008
+  abstract: The structural dynamics of the DNA binding domains of the human papillomavirus
+    strain 16 and the bovine papillomavirus strain 1, complexed with their DNA targets,
+    has been investigated by modeling, molecular dynamics simulations, and nuclear
+    magnetic resonance analysis. The simulations underline different dynamical features
+    of the protein scaffolds and a different mechanical interaction of the two proteins
+    with DNA. The two protein structures, although very similar, show differences
+    in the relative mobility of secondary structure elements. Protein structural analyses,
+    principal component analysis, and geometrical and energetic DNA analyses indicate
+    that the two transcription factors utilize a different strategy in DNA recognition
+    and deformation. Results show that the protein indirect DNA readout is not only
+    addressable to the DNA molecule flexibility but it is finely tuned by the mechanical
+    and dynamical …
+  thumbnail: /images/papers/md-simulations-of-papillomavirus-dna-e2-protein-complexes-hints-at-a-protein-structural-code-for-dna-deformation.jpg
+- title: Construction and Characterization of topologically interlinked DNA nano-structures
+  url: https://pure.au.dk/portal/en/publications/construction-and-characterization-of-topologically-interlinked-dn
+  authors:
+  - Christine JF Nielsen
+  - Hanne L Jørgensen
+  - David Paul Tordrup
+  - Sissel Juul Jensen
+  - Laura Raagaard Nielsen
+  - Cristiano Oliveira
+  - et al.
+  journal: ', 2008'
+  abstract: "Construction and Characterization of topologically interlinked DNA nano-structures\
+    \ — \nAarhus University Skip to main navigation Skip to search Skip to main content\
+    \ Aarhus \nUniversity Home Aarhus University Logo Help & FAQ English Dansk Home\
+    \ Profiles \nResearch units Projects Research output Prizes Activities Courses\
+    \ Press/Media Search by \nexpertise, name or affiliation Construction and Characterization\
+    \ of topologically interlinked \nDNA nano-structures Christine JF Nielsen, Hanne\
+    \ L. Jørgensen, David Paul Tordrup, Sissel \nJuul Jensen, Laura Raagaard Nielsen,\
+    \ Cristiano Oliveira, Alessandro Desideri, Mattia \nFalconi, Francesco Oteri,\
+    \ Steven Ludtke, Irina Serysheva, Bjarne Knudsen, Jan Skov \nPedersen, Anni Hangaard\
+    \ Andersen, Birgitta R. Knudsen, Félicie Faucon Andersen \nResearch output: Contribution\
+    \ to conference › Poster › Research Overview Original \nlanguage English Publication\
+    \ date 2008 Publication …"
+  thumbnail: /images/papers/construction-and-characterization-of-topologically-interlinked-dna-nano-structures.jpg
+- title: Assembly and Structural Analysis of a Covalently Closed Nanoscale DNA Cage
+  url: https://pure.au.dk/portal/en/publications/assembly-and-structural-analysis-of-a-covalently-closed-nanoscale
+  authors:
+  - David Paul Tordrup
+  - Cristiano Oliveira
+  - Sissel Juul Jensen
+  - Alessandro Desideri
+  - Mattia Falconi
+  - Francesco Oteri
+  - et al.
+  journal: ', 2008'
+  abstract: "Assembly and Structural Analysis of a Covalently Closed Nanoscale DNA\
+    \ Cage — Aarhus \nUniversity Skip to main navigation Skip to search Skip to main\
+    \ content Aarhus University Home \nAarhus University Logo Help & FAQ English Dansk\
+    \ Home Profiles Research units Projects \nResearch output Prizes Activities Courses\
+    \ Press/Media Search by expertise, name or affiliation \nAssembly and Structural\
+    \ Analysis of a Covalently Closed Nanoscale DNA Cage David Paul \nTordrup, Cristiano\
+    \ Oliveira, Sissel Juul Jensen, Alessandro Desideri, Mattia Falconi, \nFrancesco\
+    \ Oteri, Steve Ludtke, Irina Serysheva, Bjarne Knudsen, Jan Skov Pedersen, Birgitta\
+    \ \nR. Knudsen, Félicie Faucon Andersen Research output: Contribution to conference\
+    \ › Poster › \nResearch Overview Original language English Publication date 2008\
+    \ Publication status \nPublished - 2008 Event 6th annual iNANO meeting - Duration:\
+    \ 17 Dec 2010 → … Conference …"
+  thumbnail: /images/papers/assembly-and-structural-analysis-of-a-covalently-closed-nanoscale-dna-cage.jpg
+- title: 'journal homepage: www. elsevier. com/locate/yjsbi'
+  url: https://scholar.google.com/scholar?cluster=16454013494914693971&hl=en&oi=scholarr
+  authors:
+  - Prem Prakash Pathak
+  - SVSR Krishna Pulavarti
+  - Anupam Jain
+  - Amogh Anant Sahasrabuddhe
+  - Chhitar Mal Gupta
+  - Daniele Di Marino
+  - et al.
+  journal: 'journal homepage: www. elsevier. com/locate/yjsbiPP Pathak, '
+  thumbnail: /images/papers/journal-homepage-www-elsevier-comlocateyjsbi.jpg
