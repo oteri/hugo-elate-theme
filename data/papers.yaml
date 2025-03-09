@@ -5,7 +5,14 @@ footertext: 'View all publications on <a href="https://scholar.google.com/citati
 
 papers:
   - title: "Nucleotide Transformer: building and evaluating robust foundation models for human genomics"
-    authors: "Dalla-Torre H, Gonzalez L, Mendoza-Revilla J, Lopez Carranza N, Grzywaczewski AH, Oteri F, et al."
+    authors: 
+      - "Dalla-Torre H"
+      - "Gonzalez L"
+      - "Mendoza-Revilla J"
+      - "Lopez Carranza N"
+      - "Grzywaczewski AH"
+      - "Oteri F"
+      - "et al."
     journal: "Nature Methods, 2024"
     url: "https://doi.org/10.1038/s41592-024-02212-x"
     thumbnail: "/images/papers/nucleotide-transformer.jpg"
@@ -14,7 +21,11 @@ papers:
     code: "https://github.com/instadeepai/nucleotide-transformer"
 
   - title: "iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis of protein families"
-    authors: "Oteri F, Sarti E, Nadalin F, Carbone A"
+    authors:
+      - "Oteri F"
+      - "Sarti E"
+      - "Nadalin F"
+      - "Carbone A"
     journal: "Nucleic Acids Research, 2022"
     url: "https://doi.org/10.1093/nar/gkac435"
     thumbnail: "/images/papers/ibis2-analyzer.jpg"
@@ -22,7 +33,13 @@ papers:
     pdf: "https://academic.oup.com/nar/article-pdf/50/W1/W614/44484305/gkac435.pdf"
 
   - title: "A global metagenomic map of urban microbiomes and antimicrobial resistance"
-    authors: "Danko D, Bezdan D, Afshin EE, ..., Oteri F, et al."
+    authors:
+      - "Danko D"
+      - "Bezdan D"
+      - "Afshin EE"
+      - "..."
+      - "Oteri F"
+      - "et al."
     journal: "Cell, 2021"
     url: "https://doi.org/10.1016/j.cell.2021.05.002"
     thumbnail: "/images/papers/global-microbiome.jpg"
@@ -31,21 +48,35 @@ papers:
     data: "https://doi.org/10.6084/m9.figshare.13201817"
 
   - title: "Large-scale identification of coevolution signals across homo-oligomeric protein interfaces by direct coupling analysis"
-    authors: "Uguzzoni G, John Lovis S, Oteri F, Schug A, Szurmant H, Weigt M"
+    authors:
+      - "Uguzzoni G"
+      - "John Lovis S"
+      - "Oteri F"
+      - "Schug A"
+      - "Szurmant H"
+      - "Weigt M"
     journal: "PNAS, 2017"
     url: "https://doi.org/10.1073/pnas.1702664114"
     thumbnail: ""
     abstract: "A method for detecting coevolution signals in protein interfaces using direct coupling analysis."
 
   - title: "BIS2Analyzer: a server for co-evolution analysis of conserved protein families"
-    authors: "Oteri F, Nadalin F, Champeimont R, Carbone A"
+    authors:
+      - "Oteri F"
+      - "Nadalin F"
+      - "Champeimont R"
+      - "Carbone A"
     journal: "Nucleic Acids Research, 2017"
     url: "https://doi.org/10.1093/nar/gkx397"
     thumbnail: ""
     abstract: "A web server for analyzing coevolution in conserved protein families."
 
   - title: "Multiscale simulations give insight into the hydrogen in and out pathways of [NiFe]-hydrogenases"
-    authors: "Oteri F, Baaden M, Lojou E, Sacquin-Mora S"
+    authors:
+      - "Oteri F"
+      - "Baaden M"
+      - "Lojou E"
+      - "Sacquin-Mora S"
     journal: "The Journal of Physical Chemistry B, 2014"
     url: "https://doi.org/10.1021/jp5082296"
     thumbnail: ""

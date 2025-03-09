@@ -18,7 +18,16 @@
 				</div>
 				<div class="paper-content">
 					<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
-					<p class="authors">{{ .authors }}</p>
+					<p class="authors">
+						{{- range $index, $author := .authors -}}
+							{{- if $index -}}, {{- end -}}
+							{{- if eq $author "Oteri F" -}}
+								<span class="author-name">{{ $author }}</span>
+							{{- else -}}
+								{{ $author }}
+							{{- end -}}
+						{{- end -}}
+					</p>
 					<p class="journal">{{ .journal }}</p>
 					<p class="abstract">{{ .abstract }}</p>
 					<div class="links">
