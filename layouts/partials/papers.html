@@ -10,15 +10,23 @@
 				</div>
 			</div>
 		</div>
-		<div class="row row-bottom-padded-sm">
+		<div class="papers-grid">
 		{{ range .Site.Data.papers.papers }}
-			<div class="col-md-12 col-sm-12 col-xxs-12 to-animate">
-				<div class="paper-item">
+			<div class="paper-item to-animate">
+				<div class="paper-thumbnail">
+					<img src="{{ .thumbnail }}" alt="Paper thumbnail">
+				</div>
+				<div class="paper-content">
 					<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
-					<p class="subtitle">{{ .subtitle }}</p>
 					<p class="authors">{{ .authors }}</p>
+					<p class="journal">{{ .journal }}</p>
 					<p class="abstract">{{ .abstract }}</p>
-					<p class="doi">DOI: <a href="{{ .url }}" target="_blank">{{ .doi }}</a></p>
+					<div class="links">
+						<a href="{{ .url }}" target="_blank">View details »</a>
+						{{ if .pdf }}<a href="{{ .pdf }}" target="_blank">PDF</a>{{ end }}
+						{{ if .code }}<a href="{{ .code }}" target="_blank">Code</a>{{ end }}
+						{{ if .data }}<a href="{{ .data }}" target="_blank">Data</a>{{ end }}
+					</div>
 				</div>
 			</div>
 		{{ end }}
