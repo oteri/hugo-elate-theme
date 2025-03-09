@@ -14,8 +14,8 @@
 		
         {{ partial "intro.html" .}}
 
-		{{ if .Site.Params.work.enable }}
-       		{{ partial "work.html" .}}
+		{{ if .Site.Params.papers.enable }}
+       		{{ partial "papers.html" .}}
        	{{ end }}
 
 		{{ if .Site.Params.testimonials.enable }}
