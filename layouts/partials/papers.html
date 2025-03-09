@@ -10,34 +10,54 @@
 				</div>
 			</div>
 		</div>
-		<div class="papers-grid">
-		{{ range .Site.Data.papers.papers }}
-			<div class="paper-item to-animate">
-				<div class="paper-thumbnail">
-					<img src="{{ .thumbnail }}" alt="Paper thumbnail">
-				</div>
-				<div class="paper-content">
-					<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
-					<p class="authors">
-						{{- range $index, $author := .authors -}}
-							{{- if $index -}}, {{- end -}}
-							{{- if eq $author "Francesco Oteri" -}}
-								<span class="author-name">{{ $author }}</span>
-							{{- else -}}
-								{{ $author }}
-							{{- end -}}
-						{{- end -}}
-					</p>
-					<p class="abstract">{{ with .abstract }}{{ if gt (len .) 300 }}{{ substr . 0 300 }}...{{ else }}{{ . }}{{ end }}{{ end }}</p>
-					<div class="links">
-						<a href="{{ .url }}" target="_blank">View details »</a>
-						{{ if .pdf }}<a href="{{ .pdf }}" target="_blank">PDF</a>{{ end }}
-						{{ if .code }}<a href="{{ .code }}" target="_blank">Code</a>{{ end }}
-						{{ if .data }}<a href="{{ .data }}" target="_blank">Data</a>{{ end }}
+		<div id="papers-carousel" class="carousel slide" role="region" aria-label="Papers carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators" role="tablist">
+				{{ range $index, $paper := .Site.Data.papers.papers }}
+					<li data-target="#papers-carousel" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }} role="tab" aria-label="Paper {{ add $index 1 }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></li>
+				{{ end }}
+			</ol>
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="presentation">
+				{{ range $index, $paper := .Site.Data.papers.papers }}
+					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="Paper {{ add $index 1 }}">
+						<div class="paper-item">
+							<div class="paper-thumbnail">
+								<img src="{{ .thumbnail }}" alt="Thumbnail for {{ .title }}">
+							</div>
+							<div class="paper-content">
+								<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
+								<p class="authors">
+									{{- range $index, $author := .authors -}}
+										{{- if $index -}}, {{- end -}}
+										{{- if eq $author "Francesco Oteri" -}}
+											<span class="author-name">{{ $author }}</span>
+										{{- else -}}
+											{{ $author }}
+										{{- end -}}
+									{{- end -}}
+								</p>
+								<p class="abstract">{{ with .abstract }}{{ if gt (len .) 300 }}{{ substr . 0 300 }}...{{ else }}{{ . }}{{ end }}{{ end }}</p>
+								<div class="links">
+									<a href="{{ .url }}" target="_blank" aria-label="View details of {{ .title }}">View details »</a>
+									{{ if .pdf }}<a href="{{ .pdf }}" target="_blank" aria-label="Download PDF of {{ .title }}">PDF</a>{{ end }}
+									{{ if .code }}<a href="{{ .code }}" target="_blank" aria-label="View code for {{ .title }}">Code</a>{{ end }}
+									{{ if .data }}<a href="{{ .data }}" target="_blank" aria-label="Access data for {{ .title }}">Data</a>{{ end }}
+								</div>
+							</div>
+						</div>
 					</div>
-				</div>
+				{{ end }}
 			</div>
-		{{ end }}
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#papers-carousel" role="button" data-slide="prev" aria-label="Previous paper">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			</a>
+			<a class="right carousel-control" href="#papers-carousel" role="button" data-slide="next" aria-label="Next paper">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			</a>
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center to-animate">
