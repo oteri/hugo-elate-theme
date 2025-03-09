@@ -1,0 +1,47 @@
+enable: true
+title: "Publications"
+description: "Selected publications in computational biology, bioinformatics, and machine learning"
+footertext: 'View all publications on <a href="https://scholar.google.com/citations?hl=en&user=Ebgxuk4AAAAJ" target="_blank">Google Scholar</a>'
+
+papers:
+  - title: "Nucleotide Transformer: building and evaluating robust foundation models for human genomics"
+    subtitle: "Nature Methods, 2024"
+    authors: "Dalla-Torre H, Gonzalez L, Mendoza-Revilla J, Lopez Carranza N, Grzywaczewski AH, Oteri F, et al."
+    url: "https://doi.org/10.1038/s41592-024-02212-x"
+    doi: "10.1038/s41592-024-02212-x"
+    abstract: "A foundation model for genomics, trained on large-scale human genomic data to enable various downstream applications in human genetics."
+
+  - title: "iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis of protein families"
+    subtitle: "Nucleic Acids Research, 2022"
+    authors: "Oteri F, Sarti E, Nadalin F, Carbone A"
+    url: "https://doi.org/10.1093/nar/gkac435"
+    doi: "10.1093/nar/gkac435"
+    abstract: "A web server for analyzing coevolution in protein families using phylogenetic information."
+
+  - title: "A global metagenomic map of urban microbiomes and antimicrobial resistance"
+    subtitle: "Cell, 2021"
+    authors: "Danko D, Bezdan D, Afshin EE, ..., Oteri F, et al."
+    url: "https://doi.org/10.1016/j.cell.2021.05.002"
+    doi: "10.1016/j.cell.2021.05.002"
+    abstract: "A comprehensive analysis of urban microbiomes and antimicrobial resistance patterns across global cities."
+
+  - title: "Large-scale identification of coevolution signals across homo-oligomeric protein interfaces by direct coupling analysis"
+    subtitle: "PNAS, 2017"
+    authors: "Uguzzoni G, John Lovis S, Oteri F, Schug A, Szurmant H, Weigt M"
+    url: "https://doi.org/10.1073/pnas.1702664114"
+    doi: "10.1073/pnas.1702664114"
+    abstract: "A method for detecting coevolution signals in protein interfaces using direct coupling analysis."
+
+  - title: "BIS2Analyzer: a server for co-evolution analysis of conserved protein families"
+    subtitle: "Nucleic Acids Research, 2017"
+    authors: "Oteri F, Nadalin F, Champeimont R, Carbone A"
+    url: "https://doi.org/10.1093/nar/gkx397"
+    doi: "10.1093/nar/gkx397"
+    abstract: "A web server for analyzing coevolution in conserved protein families."
+
+  - title: "Multiscale simulations give insight into the hydrogen in and out pathways of [NiFe]-hydrogenases"
+    subtitle: "The Journal of Physical Chemistry B, 2014"
+    authors: "Oteri F, Baaden M, Lojou E, Sacquin-Mora S"
+    url: "https://doi.org/10.1021/jp5082296"
+    doi: "10.1021/jp5082296"
+    abstract: "A computational study of hydrogen pathways in hydrogenase enzymes using multiscale simulations."

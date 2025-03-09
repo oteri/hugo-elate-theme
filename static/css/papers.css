@@ -1,0 +1,61 @@
+.paper-item {
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.paper-item:hover {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.paper-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.paper-item h3 a {
+    color: #2d3033;
+    text-decoration: none;
+}
+
+.paper-item h3 a:hover {
+    color: #52d3aa;
+}
+
+.paper-item .subtitle {
+    color: #52d3aa;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.paper-item .authors {
+    color: #6c7279;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.paper-item .abstract {
+    color: #6c7279;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.paper-item .doi {
+    font-size: 14px;
+    color: #6c7279;
+}
+
+.paper-item .doi a {
+    color: #52d3aa;
+    text-decoration: none;
+}
+
+.paper-item .doi a:hover {
+    text-decoration: underline;
+}

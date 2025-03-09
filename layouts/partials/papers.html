@@ -2,30 +2,30 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">{{ with .Site.Params.papers.title }}{{ . }}{{ end }}</h2>
+				<h2 class="to-animate">{{ with .Site.Data.papers.title }}{{ . }}{{ end }}</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>{{ with .Site.Params.papers.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>{{ with .Site.Data.papers.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div class="row row-bottom-padded-sm">
-		{{ range .Site.Params.papers.row }}
-			<div class="col-md-4 col-sm-6 col-xxs-12">
-				<a href="images/{{ .img }}" class="fh5co-project-item image-popup to-animate">
-					<img src="images/{{ .img }}" alt="{{ .alt }}" class="img-responsive">
-					<div class="fh5co-text">
-					<h2>{{ .title }}</h2>
-					<span>{{ .subtitle }}</span>
-					</div>
-				</a>
+		{{ range .Site.Data.papers.papers }}
+			<div class="col-md-12 col-sm-12 col-xxs-12 to-animate">
+				<div class="paper-item">
+					<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
+					<p class="subtitle">{{ .subtitle }}</p>
+					<p class="authors">{{ .authors }}</p>
+					<p class="abstract">{{ .abstract }}</p>
+					<p class="doi">DOI: <a href="{{ .url }}" target="_blank">{{ .doi }}</a></p>
+				</div>
 			</div>
 		{{ end }}
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center to-animate">
-				<p>{{ .Site.Params.papers.footertext | markdownify }}</p>
+				<p>{{ .Site.Data.papers.footertext | markdownify }}</p>
 			</div>
 		</div>
 	</div>
