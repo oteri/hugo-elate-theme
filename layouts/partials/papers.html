@@ -28,8 +28,7 @@
 							{{- end -}}
 						{{- end -}}
 					</p>
-					<p class="journal">{{ .journal }}</p>
-					<p class="abstract">{{ .abstract }}</p>
+					<p class="abstract">{{ with .abstract }}{{ if gt (len .) 300 }}{{ substr . 0 300 }}...{{ else }}{{ . }}{{ end }}{{ end }}</p>
 					<div class="links">
 						<a href="{{ .url }}" target="_blank">View details »</a>
 						{{ if .pdf }}<a href="{{ .pdf }}" target="_blank">PDF</a>{{ end }}
