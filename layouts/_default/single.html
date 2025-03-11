@@ -13,7 +13,12 @@
     </head>
     <body class="single-page">
         {{ partial "nav.html" . }}
-
+        <section id="blog-cover" data-section="blog-cover">
+            <!-- Show the cover image at the center -->
+            <figure>
+                <img style="margin: 0 auto;" src="{{ .RelPermalink }}cover.jpg" alt="{{ .Title }}" class="img-responsive">
+            </figure>
+        </section>
         <section id="blog-single" data-section="blog-single">
             <div class="container">
                 <div class="row">
