@@ -1,5 +1,5 @@
 	{{ $posts := where .Site.RegularPages "Section" "blog" }}
-<section id="blog-list" data-section="blog">
+<section id="blogs-list" data-section="blog">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
@@ -23,20 +23,20 @@
 			<div class="carousel-inner" role="presentation">
 				{{ range $index, $post := $posts }}
 					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="blog {{ add $index 1 }}">
-						<div class="blog-item">
+						<div class="blogs-item">
 							{{ if .Params.cover }}
-								<div class="blog-thumbnail">
+								<div class="blogs-thumbnail">
 									<img src="{{ .Params.cover }}" alt="Thumbnail for {{ .Title }}">
 								</div>
 							{{ end }}
-							<div class="blog-content">
+							<div class="blogs-content">
 								<h3>{{ .Title }}</h3>
 								<p class="date">{{ .Date.Format "January 2, 2006" }}</p>
 								<div class="summary">
 									{{ .Summary }}
 								</div>
 								<div class="links">
-									<a href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read more »</a>
+									<a target="_blank" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read more »</a>
 								</div>
 							</div>
 						</div>
