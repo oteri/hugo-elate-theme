@@ -7,7 +7,7 @@ theme = "hugo-elate-theme"
 [params]
   author = "Francesco OTERI"
   description = "Personal website of Francesco Oteri, sharing research papers and projects"
-  custom_css = ["css/papers-custom.css", "css/papers-carousel.css"]
+  custom_css = ["css/papers-carousel.css"]
   
   # Navigation
   [params.navigation]
