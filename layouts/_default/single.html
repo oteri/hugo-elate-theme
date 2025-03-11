@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+    <head>
+        {{ partial "head.html" . }}
+    </head>
+    <body>
+        {{ partial "nav.html" . }}
+
+        <section id="blog-single">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1>{{ .Title }}</h1>
+                        <p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+                        <div class="content">
+                            {{ .Content }}
+                        </div>
+                        <div class="back-link">
+                            <a href="{{ .Site.BaseURL }}">← Back to Home</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {{ partial "footer.html" . }}
+        {{ partial "js.html" . }}
+    </body>
+</html>
