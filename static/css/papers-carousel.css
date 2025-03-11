@@ -30,10 +30,12 @@
 }
 
 #papers-carousel .paper-thumbnail img {
-    width: 100%;
-    height: auto;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
     border-radius: 4px;
 }
+
 
 #papers-carousel .paper-content {
     width: 100%;
