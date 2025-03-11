@@ -23,12 +23,10 @@
 			<div class="carousel-inner" role="presentation">
 				{{ range $index, $post := $posts }}
 					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="blog {{ add $index 1 }}">
-						<div class="blogs-item">
-							{{ if .Params.cover }}
-								<div class="blogs-thumbnail">
-									<img src="{{ .Params.cover }}" alt="Thumbnail for {{ .Title }}">
-								</div>
-							{{ end }}
+						<div class="blogs-item">							
+							<div class="blogs-thumbnail">
+								<img src="{{ .RelPermalink }}cover.jpg" alt="Thumbnail for {{ .Title }}">
+							</div>							
 							<div class="blogs-content">
 								<h3>{{ .Title }}</h3>
 								<p class="date">{{ .Date.Format "January 2, 2006" }}</p>
