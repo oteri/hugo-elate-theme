@@ -14,29 +14,18 @@
 		
         {{ partial "intro.html" .}}
 
+		{{ if .Site.Params.blog.enable }}
+       		{{ partial "blog.html" .}}
+       	{{ end }}		
+
 		{{ if .Site.Params.papers.enable }}
        		{{ partial "papers.html" .}}
        	{{ end }}
-
-		{{ if .Site.Params.testimonials.enable }}
-        	{{ partial "testimonials.html" .}}
-		{{ end }}
-
-		{{ if .Site.Params.services.enable }}
-        	{{ partial "services.html" .}}
-		{{ end }}
 
 		{{ if .Site.Params.about.enable }}
         	{{ partial "about.html" .}}
 		{{ end }}
 
-		{{ if .Site.Params.counters.enable }}
-        	{{ partial "counters.html" .}}
-        {{ end }}
-
-		{{ if .Site.Params.contact.enable }}
-        	{{ partial "contact.html" .}}
-        {{ end }}
 
         {{ if .Site.Params.footer.enable }}
         	{{ partial "footer.html" .}}
