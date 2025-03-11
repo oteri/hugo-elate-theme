@@ -1,11 +1,12 @@
-	<section id="blog-list" data-section="blog">
+	{{ $posts := where .Site.RegularPages "Section" "blog" }}
+<section id="blog-list" data-section="blog">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 class="to-animate">{{ with .Site.Data.blogs.title }}{{ . }}{{ end }}</h2>
+				<h2 class="to-animate">Blog</h2>
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>{{ with .Site.Data.blogs.description }}{{ . | markdownify }}{{ end }}</h3>
+						<h3>Latest Posts</h3>
 					</div>
 				</div>
 			</div>
@@ -13,36 +14,29 @@
 		<div id="blogs-carousel" class="carousel slide" role="region" aria-label="blogs carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators" role="tablist">
-				{{ range $index, $blog := .Site.Data.blogs.blogs }}
+				{{ range $index, $post := $posts }}
 					<li data-target="#blogs-carousel" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }} role="tab" aria-label="blog {{ add $index 1 }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></li>
 				{{ end }}
 			</ol>
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="presentation">
-				{{ range $index, $blog := .Site.Data.blogs.blogs }}
+				{{ range $index, $post := $posts }}
 					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="blog {{ add $index 1 }}">
 						<div class="blog-item">
-							<div class="blog-thumbnail">
-								<img src="{{ .thumbnail }}" alt="Thumbnail for {{ .title }}">
-							</div>
+							{{ if .Params.cover }}
+								<div class="blog-thumbnail">
+									<img src="{{ .Params.cover }}" alt="Thumbnail for {{ .Title }}">
+								</div>
+							{{ end }}
 							<div class="blog-content">
-								<h3>{{ .title }}</h3>
-								<p class="authors">
-									{{- range $index, $author := .authors -}}
-										{{- if $index -}}, {{- end -}}
-										{{- if or (eq $author "Francesco Oteri") (eq $author "F Oteri") -}}
-											<span class="author-name">{{ $author }}</span>
-										{{- else -}}
-											{{ $author }}
-										{{- end -}}
-									{{- end -}}
-								</p>
+								<h3>{{ .Title }}</h3>
+								<p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+								<div class="summary">
+									{{ .Summary }}
+								</div>
 								<div class="links">
-									<a href="{{ .url }}" target="_blank" aria-label="Read the blog {{ .title }}">Read the blog »</a>
-									{{ if .pdf }}<a href="{{ .pdf }}" target="_blank" aria-label="Download PDF of {{ .title }}">PDF</a>{{ end }}
-									{{ if .code }}<a href="{{ .code }}" target="_blank" aria-label="View code for {{ .title }}">Code</a>{{ end }}
-									{{ if .data }}<a href="{{ .data }}" target="_blank" aria-label="Access data for {{ .title }}">Data</a>{{ end }}
+									<a href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read more »</a>
 								</div>
 							</div>
 						</div>
