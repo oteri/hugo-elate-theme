@@ -95,7 +95,9 @@
           custom_css = ["css/foo.css", "css/bar.css"]
      -->
     {{ range .Site.Params.custom_css }}
+    {{ if ne . "css/single-page.css" }}
     <link rel="stylesheet" href="{{ . }}">
+    {{ end }}
     {{ end }}
 
     <!-- Modernizr JS -->
