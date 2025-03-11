@@ -30,37 +30,6 @@ papers:
     can be used to improve the prioritization of genetic variants. The training and
     application of …
   thumbnail: /images/papers/nucleotide-transformer-building-and-evaluating-robust-foundation-models-for-human-genomics.jpg
-- title: 'The Nucleotide Transformer: Building and Evaluating Robust Foundation Models
-    for Human Genomics'
-  url: https://www.researchsquare.com/article/rs-2644486/latest
-  authors:
-  - Marie Lopez
-  - Hugo Dalla-Torre
-  - Liam Gonzalez
-  - Javier Mendoza-Revilla
-  - Nicolas Lopez Carranza
-  - Adam Grzywaczewski
-  - et al.
-  journal: /3/21, 2023
-  abstract: Closing the gap between measurable genetic information and observable
-    traits is a longstanding challenge in genomics. Yet, the prediction of molecular
-    phenotypes from DNA sequences alone remains limited and inaccurate, often driven
-    by the scarcity of annotated data and the inability to transfer learnings between
-    prediction tasks. Here, we present an extensive study of foundation models pre-trained
-    on DNA sequences, named the Nucleotide Transformer, integrating information from
-    3,202 diverse human genomes, as well as 850 genomes from a wide range of species,
-    including model and non-model organisms. These transformer models yield transferable,
-    context-specific representations of nucleotide sequences, which allow for accurate
-    molecular phenotype prediction even in low-data settings. We show that the sequence
-    representations alone match or outperform specialized methods on 12 of 18 prediction
-    tasks, and up to 15 after fine-tuning. Despite no supervision, the transformer
-    models learned to focus attention on key genomic elements, including those that
-    regulate gene expression, such as enhancers. Lastly, we demonstrate that utilizing
-    model representations can improve the prioritization of functional genetic variants.
-    The training and application of foundational models in genomics explored in this
-    study provide a widely applicable stepping stone to bridge the gap of accurate
-    molecular phenotype prediction from DNA sequence.
-  thumbnail: /images/papers/the-nucleotide-transformer-building-and-evaluating-robust-foundation-models-for-human-genomics.jpg
 - title: 'iBIS2Analyzer: a web server for a phylogeny-driven coevolution analysis
     of protein families'
   url: https://academic.oup.com/nar/article-abstract/50/W1/W412/6603660
@@ -736,31 +705,6 @@ papers:
     a certain degree of flexibility to the structure, to be the important determinant
     for efficient assembly. The linker length …
   thumbnail: /images/papers/structure-of-nanoscale-truncated-octahedral-dna-cages-variation-of-single-stranded-linker-regions-and-influence-on-assembly-yields.jpg
-- title: 'Nano-scale DNA Cages: Structural and Functional Properties of the Single-Stranded
-    Linker Regions'
-  url: https://pure.au.dk/portal/en/publications/nano-scale-dna-cages-structural-and-functional-properties-of-the-
-  authors:
-  - Félicie Faucon Andersen
-  - Sissel Juul Jensen
-  - Cristiano Luis Pinto De Oliveira
-  - Hanne Lærke Jørgensen
-  - Bjarne Knudsen
-  - David Paul Tordrup
-  - et al.
-  journal: ', 2010'
-  abstract: "Nano-scale DNA Cages: Structural and Functional Properties of the Single-Stranded\
-    \ Linker \nRegions - Aarhus University Skip to main navigation Skip to search\
-    \ Skip to main content \nAarhus University Home Aarhus University Logo Help &\
-    \ FAQ English Dansk Home Profiles \nResearch units Projects Research output Prizes\
-    \ Activities Courses Press/Media Search by \nexpertise, name or affiliation Nano-scale\
-    \ DNA Cages: Structural and Functional Properties of \nthe Single-Stranded Linker\
-    \ Regions Félicie Faucon Andersen, Sissel Juul Jensen, Cristiano \nLuis Pinto\
-    \ De Oliveira, Hanne Lærke Jørgensen, Bjarne Knudsen, David Paul Tordrup, \nFrancesco\
-    \ Oteri, Jørn Erland Koch, Mattia Falconi, Alessandro Desideri, Jan Skov Pedersen,\
-    \ \nBirgitta R. Knudsen Research output: Contribution to conference › Poster ›\
-    \ Research Overview \nOriginal language English Publication date 2010 Publication\
-    \ status Published - 2010 Event …"
-  thumbnail: /images/papers/nano-scale-dna-cages-structural-and-functional-properties-of-the-single-stranded-linker-regions.jpg
 - title: Deciphering the structural properties that confer stability to a DNA nanocage
   url: https://pubs.acs.org/doi/abs/10.1021/nn900468y
   authors:
@@ -810,30 +754,6 @@ papers:
     group strongly interacting with the positively charged K443 and K587. Taken together
     the results indicate that cEPA inhibitor …
   thumbnail: /images/papers/conjugated-eicosapentaenoic-acid-inhibits-human-topoisomerase-ib-with-a-mechanism-different-from-camptothecin.jpg
-- title: Assembly and Analysis of Three-dimensional DNA nanostructures
-  url: https://pure.au.dk/portal/en/publications/assembly-and-analysis-of-three-dimensional-dna-nanostructures
-  authors:
-  - Sissel Juul Jensen
-  - Esben Eickhardt
-  - Christine Juul Fælled Nielsen
-  - David Paul Tordrup
-  - Cristiano Luis Pinto De Oliveira
-  - Francesco Oteri
-  - et al.
-  journal: ', 2009'
-  abstract: "Assembly and Analysis of Three-dimensional DNA nanostructures - Aarhus\
-    \ University Skip to \nmain navigation Skip to search Skip to main content Aarhus\
-    \ University Home Aarhus \nUniversity Logo Help & FAQ English Dansk Home Profiles\
-    \ Research units Projects Research \noutput Prizes Activities Courses Press/Media\
-    \ Search by expertise, name or affiliation Assembly \nand Analysis of Three-dimensional\
-    \ DNA nanostructures Sissel Juul Jensen, Esben Eickhardt, \nChristine Juul Fælled\
-    \ Nielsen, David Paul Tordrup, Cristiano Luis Pinto De Oliveira, Francesco \n\
-    Oteri, Mattia Falconi, Giovanni Chillemi, Alessandro Desideri, Jan Skov Pedersen,\
-    \ Birgitta R. \nKnudsen, Félicie Faucon Andersen Research output: Contribution\
-    \ to conference › Conference \nabstract for conference › Research Overview Original\
-    \ language English Publication date \n2009 Publication status Published - 2009\
-    \ Event Nanotech Europe 2009 - Berlin, Germany …"
-  thumbnail: /images/papers/assembly-and-analysis-of-three-dimensional-dna-nanostructures.jpg
 - title: MD simulations of papillomavirus DNA-E2 protein complexes hints at a protein
     structural code for DNA deformation
   url: https://www.cell.com/AJHG/fulltext/S0006-3495(08)70181-4
@@ -857,63 +777,5 @@ papers:
     addressable to the DNA molecule flexibility but it is finely tuned by the mechanical
     and dynamical …
   thumbnail: /images/papers/md-simulations-of-papillomavirus-dna-e2-protein-complexes-hints-at-a-protein-structural-code-for-dna-deformation.jpg
-- title: Construction and Characterization of topologically interlinked DNA nano-structures
-  url: https://pure.au.dk/portal/en/publications/construction-and-characterization-of-topologically-interlinked-dn
-  authors:
-  - Christine JF Nielsen
-  - Hanne L Jørgensen
-  - David Paul Tordrup
-  - Sissel Juul Jensen
-  - Laura Raagaard Nielsen
-  - Cristiano Oliveira
-  - et al.
-  journal: ', 2008'
-  abstract: "Construction and Characterization of topologically interlinked DNA nano-structures\
-    \ — \nAarhus University Skip to main navigation Skip to search Skip to main content\
-    \ Aarhus \nUniversity Home Aarhus University Logo Help & FAQ English Dansk Home\
-    \ Profiles \nResearch units Projects Research output Prizes Activities Courses\
-    \ Press/Media Search by \nexpertise, name or affiliation Construction and Characterization\
-    \ of topologically interlinked \nDNA nano-structures Christine JF Nielsen, Hanne\
-    \ L. Jørgensen, David Paul Tordrup, Sissel \nJuul Jensen, Laura Raagaard Nielsen,\
-    \ Cristiano Oliveira, Alessandro Desideri, Mattia \nFalconi, Francesco Oteri,\
-    \ Steven Ludtke, Irina Serysheva, Bjarne Knudsen, Jan Skov \nPedersen, Anni Hangaard\
-    \ Andersen, Birgitta R. Knudsen, Félicie Faucon Andersen \nResearch output: Contribution\
-    \ to conference › Poster › Research Overview Original \nlanguage English Publication\
-    \ date 2008 Publication …"
-  thumbnail: /images/papers/construction-and-characterization-of-topologically-interlinked-dna-nano-structures.jpg
-- title: Assembly and Structural Analysis of a Covalently Closed Nanoscale DNA Cage
-  url: https://pure.au.dk/portal/en/publications/assembly-and-structural-analysis-of-a-covalently-closed-nanoscale
-  authors:
-  - David Paul Tordrup
-  - Cristiano Oliveira
-  - Sissel Juul Jensen
-  - Alessandro Desideri
-  - Mattia Falconi
-  - Francesco Oteri
-  - et al.
-  journal: ', 2008'
-  abstract: "Assembly and Structural Analysis of a Covalently Closed Nanoscale DNA\
-    \ Cage — Aarhus \nUniversity Skip to main navigation Skip to search Skip to main\
-    \ content Aarhus University Home \nAarhus University Logo Help & FAQ English Dansk\
-    \ Home Profiles Research units Projects \nResearch output Prizes Activities Courses\
-    \ Press/Media Search by expertise, name or affiliation \nAssembly and Structural\
-    \ Analysis of a Covalently Closed Nanoscale DNA Cage David Paul \nTordrup, Cristiano\
-    \ Oliveira, Sissel Juul Jensen, Alessandro Desideri, Mattia Falconi, \nFrancesco\
-    \ Oteri, Steve Ludtke, Irina Serysheva, Bjarne Knudsen, Jan Skov Pedersen, Birgitta\
-    \ \nR. Knudsen, Félicie Faucon Andersen Research output: Contribution to conference\
-    \ › Poster › \nResearch Overview Original language English Publication date 2008\
-    \ Publication status \nPublished - 2008 Event 6th annual iNANO meeting - Duration:\
-    \ 17 Dec 2010 → … Conference …"
-  thumbnail: /images/papers/assembly-and-structural-analysis-of-a-covalently-closed-nanoscale-dna-cage.jpg
-- title: 'journal homepage: www. elsevier. com/locate/yjsbi'
-  url: https://scholar.google.com/scholar?cluster=16454013494914693971&hl=en&oi=scholarr
-  authors:
-  - Prem Prakash Pathak
-  - SVSR Krishna Pulavarti
-  - Anupam Jain
-  - Amogh Anant Sahasrabuddhe
-  - Chhitar Mal Gupta
-  - Daniele Di Marino
-  - et al.
-  journal: 'journal homepage: www. elsevier. com/locate/yjsbiPP Pathak, '
-  thumbnail: /images/papers/journal-homepage-www-elsevier-comlocateyjsbi.jpg
+
+
