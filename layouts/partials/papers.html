@@ -27,7 +27,7 @@
 								<img src="{{ .thumbnail }}" alt="Thumbnail for {{ .title }}">
 							</div>
 							<div class="paper-content">
-								<h3><a href="{{ .url }}" target="_blank">{{ .title }}</a></h3>
+								<h3>{{ .title }}</h3>
 								<p class="authors">
 									{{- range $index, $author := .authors -}}
 										{{- if $index -}}, {{- end -}}
