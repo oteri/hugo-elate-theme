@@ -14,30 +14,22 @@ theme = "hugo-elate-theme"
     brand = "Francesco OTERI"
     home = "Home"
     papers = "Papers"
+    blog = "Blog"
     about = "About"
     contact = "Contact"
 
   # Hero section
   [params.hero]
     enable = true
-    title = "Research in Computational Biology"
-    subtitle = "Exploring molecular dynamics, protein evolution, and genomics"
+    title = "Structural biology, genomics, and bioinformatics.\n\nCreating and applying computational tools to study biological systems.\n\nDriven by curiosity."
 
   # Papers section
   [params.papers]
     enable = true
 
-  # About section
-  [params.about]
+  # Blog section
+  [params.blog]
     enable = true
-    title = "About"
-    description = "Research in computational biology and bioinformatics"
-
-  # Contact section
-  [params.contact]
-    enable = true
-    title = "Contact"
-    description = "Get in touch"
 
   # Footer section
   [params.footer]
