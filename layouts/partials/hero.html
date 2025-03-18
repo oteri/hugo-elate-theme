@@ -1,10 +1,22 @@
 	<section id="fh5co-home" data-section="home" style="background-image: url(images/hero_image.png);" data-stellar-background-ratio="1">
 		<div class="gradient"></div>
-		<div class="container">
-			<div class="text-wrap">
-				<div class="text-inner">
-					<div class="row">
-						<div class="col-md-8 col-md-offset-2">							
+		<div class="container" style="height:700px;">
+			<div class="row" style="display: flex; align-items: center; height: 100%;">
+				<!-- Left column with profile image and social links -->
+				<div class="col-md-5">
+					<div class="profile-image-container text-center">
+						<img src="/images/person1.jpg" alt="Francesco Oteri" class="img-responsive img-circle" style="max-width: 250px; margin: 0 auto;">
+						<div class="social-links" style="margin-top: 20px;">
+							<a href="https://github.com/francescooteri" target="_blank" class="btn btn-primary" style="margin: 5px;"><i class="icon-github"></i> GitHub</a>
+							<a href="https://medium.com/@francescooteri" target="_blank" class="btn btn-primary" style="margin: 5px;"><i class="icon-medium"></i> Medium</a>
+							<a href="https://linkedin.com/in/francescooteri" target="_blank" class="btn btn-primary" style="margin: 5px;"><i class="icon-linkedin"></i> LinkedIn</a>
+						</div>
+					</div>
+				</div>
+				<!-- Right column with text content -->
+				<div class="col-md-7 ">
+					<div class="text-wrap" style="display: table; height: 100%;">
+						<div class="text-inner" style="display: table-cell; vertical-align: middle;">
 							<h2 class="to-animate">{{ with .Site.Params.hero.title }}{{ . | markdownify }}{{ end }}</h2>
 						</div>
 					</div>

@@ -32,3 +32,57 @@
     padding-left: 0;
     color: #52d3aa;
 }
+
+
+/* Custom styles for the hero section */
+.profile-image-container {
+    padding: 30px 0;
+}
+
+.profile-image-container img {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-image-container img:hover {
+    transform: scale(1.05);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Alignment classes for Bootstrap compatibility */
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .profile-image-container {
+        margin-bottom: 30px;
+    }
+    
+    .align-items-center {
+        display: block;
+    }
+    
+    .d-flex {
+        display: block;
+    }
+}
