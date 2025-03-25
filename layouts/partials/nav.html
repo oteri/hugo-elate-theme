@@ -16,13 +16,14 @@
 
                 <li class="active"><a href="#" data-nav-section="home"><span>{{ with .Site.Params.navigation.home }}{{ . | markdownify }}{{ end }}</span></a></li>
                 
+                {{ if .Site.Params.blog.enable }}
+                <li><a href="#" data-nav-section="blog"><span>{{ with .Site.Params.navigation.blog }}{{ . | markdownify }}{{ end }}</span></a></li> 
+                {{ end }}
+                
                 {{ if .Site.Params.papers.enable }}
                 <li><a href="#" data-nav-section="papers"><span>{{ with .Site.Params.navigation.papers }}{{ . | markdownify }}{{ end }}</span></a></li> 
                 {{ end }}
 
-                {{ if .Site.Params.blog.enable }}
-                <li><a href="#" data-nav-section="blog"><span>{{ with .Site.Params.navigation.blog }}{{ . | markdownify }}{{ end }}</span></a></li> 
-                {{ end }}
               
             </ul>
         </div>
