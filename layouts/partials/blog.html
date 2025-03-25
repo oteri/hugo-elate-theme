@@ -1,40 +1,38 @@
-	{{ $posts := where .Site.RegularPages "Section" "blog" }}
 <section id="blogs-list" data-section="blog">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 section-heading text-center">
-				<h2 style="opacity: 1;" class="to-animate">Blog</h2>
+				<h2 class="to-animate">{{ with .Site.Data.blog.title }}{{ . }}{{ end }}</h2>
 				<div class="row">
-					<div style="opacity: 1;" class="col-md-8 col-md-offset-2 subtext to-animate">
-						<h3>Latest Posts</h3>
+					<div class="col-md-8 col-md-offset-2 subtext to-animate">
+						<h3>{{ with .Site.Data.blog.description }}{{ . | markdownify }}{{ end }}</h3>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="blogs-carousel" class="carousel slide" role="region" aria-label="blogs carousel">
+		<div id="blogs-carousel" class="carousel slide" role="region" aria-label="Blogs carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators" role="tablist">
-				{{ range $index, $post := $posts }}
-					<li data-target="#blogs-carousel" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }} role="tab" aria-label="blog {{ add $index 1 }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></li>
+				{{ range $index, $blog := .Site.Data.blog.blogs }}
+					<li data-target="#blogs-carousel" data-slide-to="{{ $index }}" {{ if eq $index 0 }}class="active"{{ end }} role="tab" aria-label="Blog {{ add $index 1 }}" aria-selected="{{ if eq $index 0 }}true{{ else }}false{{ end }}"></li>
 				{{ end }}
 			</ol>
 
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner" role="presentation">
-				{{ range $index, $post := $posts }}
-					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="blog {{ add $index 1 }}">
-						<div class="blogs-item">							
+				{{ range $index, $blog := .Site.Data.blog.blogs }}
+					<div class="item{{ if eq $index 0 }} active{{ end }}" role="tabpanel" aria-label="Blog {{ add $index 1 }}">
+						<div class="blogs-item">
 							<div class="blogs-thumbnail">
-								<img src="{{ .RelPermalink }}cover.jpg" alt="Thumbnail for {{ .Title }}">
-							</div>							
+								<img src="{{ .thumbnail }}" alt="Thumbnail for {{ .title }}">
+							</div>
 							<div class="blogs-content">
-								<h3>{{ .Title }}</h3>
-								<p class="date">{{ .Date.Format "January 2, 2006" }}</p>
+								<h3>{{ .title }}</h3>
 								<div class="summary">
-									{{ .Summary }}
+									{{ .summary }}
 								</div>
 								<div class="links">
-									<a target="_blank" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">Read more »</a>
+									<a href="{{ .url }}" target="_blank" aria-label="Read the blog {{ .title }}">Read the blog »</a>
 								</div>
 							</div>
 						</div>
@@ -52,7 +50,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-12 text-center to-animate">
-				<p>{{ .Site.Data.blogs.footertext | markdownify }}</p>
+				<p>{{ .Site.Data.blog.footertext | markdownify }}</p>
 			</div>
 		</div>
 	</div>
