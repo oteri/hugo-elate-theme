@@ -493,7 +493,7 @@ h1, h2, h3, h4, h5, h6 {
   flex-grow: 1;
   background-size: cover;
   position: relative;
-  backgroun-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 @media screen and (max-width: 768px) {
   #fh5co-intro .fh5co-block {
@@ -1385,6 +1385,11 @@ h1, h2, h3, h4, h5, h6 {
 /* Exception for blog carousel title */
 #blogs-list .section-heading .to-animate {
   opacity: 1;
+}
+
+#blogs-list .section-heading, #papers-list .section-heading {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 480px) {
